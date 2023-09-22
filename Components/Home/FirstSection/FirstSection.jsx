@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import Button from "@/Components/Common/Buttons/Button";
+import { motion } from "framer-motion";
 
-const FirstSectioncontainer = styled.div`
+const FirstSectioncontainer = styled(motion.div)`
   width: 100%;
   height: 100vh;
   position: relative;
@@ -93,7 +94,7 @@ const FirstSectioncontainer = styled.div`
             backdrop-filter: blur(20px);
             border-radius: 100px;
             border: 1px solid var(--grey);
-            transition: all .5s ease-in-out;
+            transition: all 0.5s ease-in-out;
 
             &:hover {
               border: 1px solid var(--text-gradient-stroke);
@@ -116,7 +117,7 @@ const FirstSectioncontainer = styled.div`
       font-family: var(--light-font);
       width: 70%;
       font-weight: 300;
-      color: var(--white);
+      color: var(--whites);
 
       @media screen and (max-width: 1024px) {
         width: 90%;
@@ -129,20 +130,48 @@ const FirstSectioncontainer = styled.div`
   }
 `;
 
+const fadeVariants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+      delay: 0.3,
+    },
+  },
+};
+
+const staggerChildrenVariants = {
+  animate: {
+    transition: {
+      staggerChildren: 0.3, // Adjust the stagger delay as needed
+    },
+  },
+};
+
 function FirstSection() {
   return (
     <div>
-      <FirstSectioncontainer>
-        <div className="bgvideo">
+      <FirstSectioncontainer
+        variants={staggerChildrenVariants}
+        initial="initial"
+        animate="animate" // Add animate here to trigger animation
+      >
+        <motion.div variants={fadeVariants} className="bgvideo">
           <video
             src="https://res.cloudinary.com/divbobkmd/video/upload/v1695302345/cube-loop_pwawki.webm"
             autoPlay
             loop
             muted
           />
-        </div>
+        </motion.div>
         <div className="container">
-          <h1>
+          <motion.h1 variants={fadeVariants}>
             We are <br />{" "}
             <div className="studio">
               <Link href="/about">
@@ -152,14 +181,16 @@ function FirstSection() {
               </Link>
               Studio
             </div>
-          </h1>
-          <p>
+          </motion.h1>
+          <motion.p variants={fadeVariants}>
             Our commitment lies in nurturing the growth of your online business.
             Armed with our vast expertise in software development, branding, and
             social media marketing, we are well-prepared to guide you on the
             path to realizing your aspirations and achieving success.
-          </p>
-          <Button text="Let's Talk" />
+          </motion.p>
+          <motion.div variants={fadeVariants}>
+            <Button text="Let's Talk" />
+          </motion.div>
         </div>
       </FirstSectioncontainer>
     </div>

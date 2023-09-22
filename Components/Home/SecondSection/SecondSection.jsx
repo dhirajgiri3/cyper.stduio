@@ -34,7 +34,7 @@ const SecondSectionContainer = styled.div`
 
     p {
       font-size: var(--para);
-      color: var(--para-color);
+      color: var(--whites);
       font-weight: 300;
       font-family: var(--light-font);
       text-align: center;

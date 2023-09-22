@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import star from "@/Assets/Images/Star/star-blue.png";
 import sharda from "@/Assets/Images/Companies logo/shardauniversity-logo.jpg";
@@ -66,36 +65,83 @@ const TrustContainer = styled(motion.div)`
     }
 
     h1 {
-      color: var(--grey);
+      color: var(--white);
       white-space: nowrap;
     }
   }
 `;
 
 const text = [
-  "Sharda Univeristy",
+  "Sharda University",
   "Navkar Selection",
   "Shipex India",
   "Fast Guide",
   "FAD",
 ];
 
+const textVariants = {
+  initial: {
+    opacity: 0,
+    x: 50,
+  },
+  animate: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1,
+      type: "spring",
+      stiffness: 100,
+      damping: 10,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const fadeVariants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+      delay: 0.3,
+    },
+  },
+};
+
+const staggerChildrenVariants = {
+  animate: {
+    transition: {
+      staggerChildren: 0.3, // Adjust the stagger delay as needed
+    },
+  },
+};
+
 function Trusted() {
   return (
-    <TrustContainer>
-      <div className="title">
+    <TrustContainer
+      variants={staggerChildrenVariants}
+      initial="initial"
+      whileInView="animate"
+    >
+      <motion.div variants={fadeVariants} className="title">
         <Image src={star} alt="shipex india" />
         <h1> Trusted By</h1>
-      </div>
+      </motion.div>
       <div className="company">
-        <h1>Sharda University</h1>
-        <h1>Navkar Selection</h1>
-        <h1>Shipex india</h1>
-        <h1>Fast Guide</h1>
-        <h1>FAD</h1>
+        {text.map((company, index) => (
+          <motion.h1 key={index} variants={textVariants}>
+            {company}
+          </motion.h1>
+        ))}
       </div>
     </TrustContainer>
   );
 }
 
 export default Trusted;
+

@@ -6,8 +6,9 @@ import styled from "styled-components";
 import logo from "@/Assets/Images/cyper-logo/cyper-white-logo.png";
 import Image from "next/image";
 import Sidebar from "./Sidebar/Sidebar";
+import { motion } from "framer-motion";
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled(motion.div)`
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -256,7 +257,23 @@ const Sidebars = styled.div`
   }
 `;
 
-
+const fadeVariants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+      type: "spring",
+      stiffness: 100,
+      damping: 10,
+    },
+  },
+};
 
 function Header() {
   const [sidebar, setSidebar] = useState(false);
@@ -298,7 +315,11 @@ function Header() {
 
   return (
     <>
-      <HeaderContainer>
+      <HeaderContainer
+        variants={fadeVariants}
+        initial="initial"
+        animate="animate"
+      >
         <FixedElement top={20}>
           <div className="container">
             <div className="left">
