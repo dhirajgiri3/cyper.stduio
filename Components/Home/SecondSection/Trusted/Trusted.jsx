@@ -20,7 +20,7 @@ const TrustContainer = styled(motion.div)`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
 
     img {
       width: 5rem;
@@ -71,6 +71,14 @@ const TrustContainer = styled(motion.div)`
     }
   }
 `;
+
+const text = [
+  "Sharda Univeristy",
+  "Navkar Selection",
+  "Shipex India",
+  "Fast Guide",
+  "FAD",
+];
 
 function Trusted() {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Trusted from "./Trusted/Trusted";
+import { motion } from "framer-motion";
 
 const SecondSectionContainer = styled.div`
   width: 100%;
@@ -15,11 +16,11 @@ const SecondSectionContainer = styled.div`
   gap: 5rem;
 
   @media screen and (max-width: 1024px) {
-    padding: 5rem 5rem;
+    padding: 3rem 5rem;
   }
 
   @media screen and (max-width: 768px) {
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
   }
 
   .secondsectioncontainer {
@@ -36,6 +37,7 @@ const SecondSectionContainer = styled.div`
       color: var(--para-color);
       font-weight: 300;
       font-family: var(--light-font);
+      text-align: center;
     }
 
     .strokes {
@@ -51,6 +53,7 @@ const SecondSectionContainer = styled.div`
         flex-direction: column;
       }
     }
+
     .description {
       width: 70%;
       margin: 0 auto;
@@ -66,7 +69,7 @@ const SecondSectionContainer = styled.div`
 
 const OutlineTxt = styled.h1`
   color: transparent;
-  background-image: var(--text-gradient);
+  background-image: var(--grey-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   text-shadow: none;
@@ -79,13 +82,8 @@ const OutlineTxt = styled.h1`
   letter-spacing: 5px;
   color: #000;
   -webkit-text-stroke: 3px transparent;
-
-  &:hover {
-    mix-blend-mode: difference;
-    color: transparent;
-    background-image: linear-gradient(#00000000, #00000000);
-    -webkit-text-stroke: 1px #eee;
-  }
+  mix-blend-mode: difference;
+  transition: background-image 0.5s ease-in-out;
 
   @media screen and (max-width: 768px) {
     font-size: 3.2rem;
@@ -94,9 +92,14 @@ const OutlineTxt = styled.h1`
     font-size: 3rem;
   }
 
+  &:hover {
+    background-image: var(--text-gradient);
+  }
+
   &::after {
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    mix-blend-mode: difference;
   }
 
   &:hover::after {
@@ -113,8 +116,8 @@ const OutlineTxt = styled.h1`
     z-index: -1;
     border-radius: 50%;
     animation: rotate 5s linear infinite;
-    transition: all 0.5s ease-in-out;
-    mix-blend-mode: difference;
+    transition: opacity 0.5s ease-in-out;
+    transition-delay: 2s;
 
     @keyframes rotate {
       0% {
@@ -132,32 +135,83 @@ const OutlineTxt = styled.h1`
   }
 `;
 
+const text = ["Development", "Branding", "Marketing"];
+
+const imageUrls = [
+  "https://res.cloudinary.com/divbobkmd/image/upload/v1695375278/web-design1_wmciwu.png",
+  "https://images.prismic.io/noomo-website/d595988b-2a82-410b-aedc-81641e8bb0fc_wcf+case+preview-2.png?auto=compress,format",
+  "https://images.unsplash.com/photo-1541537103745-ea3429c65dc4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=2000",
+];
+
+const textVariants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      type: "spring",
+      stiffness: 100,
+      damping: 10,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const fadeVariants = {
+  initial: {
+    opacity: 0,
+    y: 50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+      delay: 0.3,
+    },
+  },
+};
+
+const staggerChildrenVariants = {
+  animate: {
+    transition: {
+      staggerChildren: 0.5,
+    },
+  },
+};
+
 function SecondSection() {
   return (
     <SecondSectionContainer>
-      <div className="secondsectioncontainer">
-        <p>We're Focused In</p>
+      <motion.div
+        className="secondsectioncontainer"
+        variants={staggerChildrenVariants}
+        initial="initial"
+        whileInView="animate"
+      >
+        <motion.p variants={fadeVariants}>We're Focused In</motion.p>
         <div className="strokes">
-          <OutlineTxt url="https://res.cloudinary.com/divbobkmd/image/upload/v1695375278/web-design1_wmciwu.png">
-            Development
-          </OutlineTxt>
-          <OutlineTxt url="https://images.prismic.io/noomo-website/d595988b-2a82-410b-aedc-81641e8bb0fc_wcf+case+preview-2.png?auto=compress,format">
-            Branding
-          </OutlineTxt>
-          <OutlineTxt url="https://images.unsplash.com/photo-1541537103745-ea3429c65dc4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=2000">
-            Marketing
-          </OutlineTxt>
+          {text.map((item, index) => (
+            <motion.div key={index} variants={textVariants}>
+              <OutlineTxt url={imageUrls[index]}>{item}</OutlineTxt>
+            </motion.div>
+          ))}
         </div>
         <div className="description">
-          <p>
+          <motion.p variants={fadeVariants}>
             We are a team of passionate designers and developers who thrive to
             well craft tailored solutions for our clients. We have been working
             with startups, small businesses & corporations since 2023. Our
             expertise in the field includes brand identity design, UX/UI design,
-            web design, web development and marketing.
-          </p>
+            web design, web development, and marketing.
+          </motion.p>
         </div>
-      </div>
+      </motion.div>
       <Trusted />
     </SecondSectionContainer>
   );
