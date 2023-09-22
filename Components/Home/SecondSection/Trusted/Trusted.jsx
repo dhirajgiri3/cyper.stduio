@@ -45,13 +45,14 @@ const TrustContainer = styled(motion.div)`
     flex-wrap: nowrap;
     overflow: hidden;
     overflow-x: scroll;
+    padding: 0 1rem;
 
     @media screen and (max-width: 1024px) {
       width: calc(100vw - 10rem);
     }
 
     @media screen and (max-width: 768px) {
-      width: calc(100vw - 2rem);
+      width: calc(100vw - 4rem);
     }
 
     &::-webkit-scrollbar {
