@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "circular-light";
+  src: url("../Assets/Fonts/Circular-Light.otf");
+}
+@font-face {
+  font-family: "circular";
+  src: url("../Assets/Fonts/Circular.otf");
+}
+@font-face {
+  font-family: "grot-bold";
+  src: url("../Assets/Fonts/Fontspring-DEMO-rocgrotesk-bold.otf");
+}
+@font-face {
+  font-family: "grot-extrabold";
+  src: url("../Assets/Fonts/Fontspring-DEMO-rocgrotesk-extrabold.otf");
+}
+@font-face {
+  font-family: "grot-heavy";
+  src: url("../Assets/Fonts/Fontspring-DEMO-rocgrotesk-heavy.otf");
+}
+@font-face {
+  font-family: "grot-light";
+  src: url("../Assets/Fonts/Fontspring-DEMO-rocgroteskcomp-light.otf");
+}
+@font-face {
+  font-family: "grot-mid";
+  src: url("../Assets/Fonts/Fontspring-DEMO-rocgroteskcond-medium.otf");
+}
+@font-face {
+  font-family: "grot";
+  src: url("../Assets/Fonts/Fontspring-DEMO-rocgroteskcond-regular.otf");
+}
+@font-face {
+  font-family: "grot-wideblack";
+  src: url("../Assets/Fonts/Fontspring-DEMO-rocgroteskextrawide-extrabold.otf");
+}
+@font-face {
+  font-family: "grot-widebold";
+  src: url("../Assets/Fonts/Fontspring-DEMO-rocgroteskextrawide-bold.otf");
+}
+@font-face {
+  font-family: "grot-wideheavy";
+  src: url("../Assets/Fonts/Fontspring-DEMO-rocgroteskextrawide-heavy.otf");
+}
+@font-face {
+  font-family: "grot-widemid";
+  src: url("../Assets/Fonts/Fontspring-DEMO-rocgroteskextrawide-medium.otf");
+}
+@font-face {
+  font-family: "grot-wide";
+  src: url("../Assets/Fonts/Fontspring-DEMO-rocgroteskextrawide-regular.otf");
+}
+
+:root {
+  --text-gradient: linear-gradient(97deg, #7400ff 0%, #d512cf 60%, #ff396c 80%);
+
+  --text-gradient-stroke: #ff85eb;
+
+  --primary: #7400ff;
+
+  --primary-fade: #7400ff30;
+
+  --secondary: #07001c;
+
+  --white: #eee;
+
+  --black: #111;
+
+  --grey: #555;
+
+  --para-color: #ffffff99;
+
+  --font: "circular";
+
+  --heading-font: "grot-bold";
+
+  --wide-font: "grot-widebold";
+
+  --light-font: "circular-light";
+
+  --para: 0.8rem;
+
+  --heading: 3rem;
+
+  --large: 7rem;
+
+  --heading-mid: 2rem;
+
+  --norm: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #000;
+  font-family: var(--font);
+  color: #eee;
+
+  a {
+    text-decoration: none;
+  }
+}
