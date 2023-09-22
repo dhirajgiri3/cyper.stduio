@@ -12,7 +12,7 @@ const SecondSectionContainer = styled.div`
   align-items: center;
   overflow: hidden;
   flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
 
   @media screen and (max-width: 1024px) {
     padding: 5rem 5rem;
@@ -29,7 +29,7 @@ const SecondSectionContainer = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: space-between;
-    gap: 3rem;
+    gap: 5rem;
 
     p {
       font-size: var(--para);
@@ -52,8 +52,13 @@ const SecondSectionContainer = styled.div`
       }
     }
     .description {
+      width: 70%;
+      margin: 0 auto;
       p {
         font-size: var(--norm);
+      }
+      @media screen and (max-width: 767px) {
+        width: 100%;
       }
     }
   }
@@ -153,7 +158,7 @@ function SecondSection() {
           </p>
         </div>
       </div>
-      <Trusted/>
+      <Trusted />
     </SecondSectionContainer>
   );
 }
