@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import Trusted from "./Trusted/Trusted";
 
 const SecondSectionContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   min-height: 30vh;
   height: 100%;
   padding: 5rem 10rem;
@@ -10,6 +11,8 @@ const SecondSectionContainer = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  flex-direction: column;
+  gap: 3rem;
 
   @media screen and (max-width: 1024px) {
     padding: 5rem 5rem;
@@ -28,6 +31,13 @@ const SecondSectionContainer = styled.div`
     align-items: space-between;
     gap: 3rem;
 
+    p {
+      font-size: var(--para);
+      color: var(--para-color);
+      font-weight: 300;
+      font-family: var(--light-font);
+    }
+
     .strokes {
       width: 100%;
       height: 100%;
@@ -39,6 +49,11 @@ const SecondSectionContainer = styled.div`
 
       @media screen and (max-width: 768px) {
         flex-direction: column;
+      }
+    }
+    .description {
+      p {
+        font-size: var(--norm);
       }
     }
   }
@@ -64,7 +79,7 @@ const OutlineTxt = styled.h1`
     mix-blend-mode: difference;
     color: transparent;
     background-image: linear-gradient(#00000000, #00000000);
-    -webkit-text-stroke: 1px #777;
+    -webkit-text-stroke: 1px #eee;
   }
 
   @media screen and (max-width: 768px) {
@@ -138,6 +153,7 @@ function SecondSection() {
           </p>
         </div>
       </div>
+      <Trusted/>
     </SecondSectionContainer>
   );
 }
