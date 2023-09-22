@@ -28,7 +28,7 @@ const HeaderContainer = styled.div`
 
   .container {
     background: #00000010;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     height: 8vh;
     width: calc(100vw - 20rem);
     padding: 1rem;

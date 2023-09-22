@@ -90,7 +90,7 @@ const FirstSectioncontainer = styled.div`
           .span {
             padding: 0.3rem 1.8rem;
             background: #00000010;
-            backdrop-filter: blur(50px);
+            backdrop-filter: blur(20px);
             border-radius: 100px;
             border: 1px solid var(--grey);
             transition: all .5s ease-in-out;

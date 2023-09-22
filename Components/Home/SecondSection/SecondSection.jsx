@@ -46,7 +46,7 @@ const SecondSectionContainer = styled.div`
 
 const OutlineTxt = styled.h1`
   color: transparent;
-  -webkit-text-stroke: 0.3px var(--grey);
+  background-image: var(--text-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   text-shadow: none;
@@ -56,18 +56,22 @@ const OutlineTxt = styled.h1`
   z-index: 2;
   font-family: var(--font);
   font-weight: 700;
+  letter-spacing: 5px;
+  color: #000;
+  -webkit-text-stroke: 3px transparent;
 
   &:hover {
     mix-blend-mode: difference;
+    color: transparent;
+    background-image: linear-gradient(#00000000, #00000000);
+    -webkit-text-stroke: 1px #777;
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 3.5rem;
-    -webkit-text-stroke: 0.3px var(--grey);
+    font-size: 3.2rem;
   }
   @media screen and (max-width: 376px) {
-    font-size: 3.2rem;
-    -webkit-text-stroke: 0.8px var(--grey); /* Further reduce the text stroke for very small screens */
+    font-size: 3rem;
   }
 
   &::after {
@@ -103,8 +107,6 @@ const OutlineTxt = styled.h1`
     }
 
     @media screen and (max-width: 768px) {
-      width: auto;
-      height: auto;
       top: -50%;
     }
   }

@@ -52,7 +52,7 @@
 }
 
 :root {
-  --text-gradient: linear-gradient(97deg, #7400ff 0%, #d512cf 60%, #ff396c 80%);
+  --text-gradient: linear-gradient(97deg, #7400ff 0%, #d512cf 60%, #ff2194 80%);
 
   --text-gradient-stroke: #ff85eb;
 
@@ -66,7 +66,7 @@
 
   --black: #111;
 
-  --grey: #555;
+  --grey: #777;
 
   --para-color: #ffffff99;
 
