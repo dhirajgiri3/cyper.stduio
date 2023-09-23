@@ -38,12 +38,13 @@ function Video() {
   return (
     <div>
       <Container>
-        <video loop muted autoPlay  className="introvid">
-          <source
-            src="https://res.cloudinary.com/divbobkmd/video/upload/v1695302321/cyper-intro_zcyuip.mp4"
-            type="video/mp4"
-          />
-        </video>
+        <video
+          src="https://res.cloudinary.com/divbobkmd/video/upload/v1695302321/cyper-intro_zcyuip.mp4"
+          loop
+          muted
+          autoPlay
+          className="introvid"
+        ></video>
       </Container>
     </div>
   );

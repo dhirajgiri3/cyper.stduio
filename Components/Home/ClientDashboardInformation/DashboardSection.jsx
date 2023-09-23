@@ -191,14 +191,14 @@ const DashboardSection = () => {
             dangerouslySetInnerHTML={true}
           />
         </div>
-        {/* <div className="meme-video">
+        <div className="meme-video">
           <video
             loop
             autoPlay
             muted
             src="https://res.cloudinary.com/divbobkmd/video/upload/v1695425223/Cyper%20studio/yes-oh_mnadqn.mp4"
           />
-        </div> */}
+        </div>
       </div>
       <hr />
       <div className="dashboard">
