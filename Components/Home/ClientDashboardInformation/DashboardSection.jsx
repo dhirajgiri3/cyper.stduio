@@ -31,7 +31,6 @@ const DashboardSectionContainer = styled.div`
 
     @media screen and (max-width: 1024px) {
       height: 40vh;
-      object-fit: contain;
     }
 
     @media screen and (max-width: 767px) {
@@ -105,7 +104,11 @@ const DashboardSectionContainer = styled.div`
     z-index: 0;
 
     @media screen and (max-width: 1024px) {
-    min-height: 70vh;
+      min-height: 70vh;
+    }
+
+    @media screen and (max-width: 767px) {
+      min-height: 90vh;
     }
 
     .bottom {
