@@ -3,7 +3,6 @@
 import React, { useEffect, useRef } from "react";
 import Header from "../Common/Header/Header";
 import FirstSection from "./FirstSection/FirstSection";
-import Video from "./IntroVideo/Video";
 import styled from "styled-components";
 import { useInView } from "react-intersection-observer";
 import gsap from "gsap";
@@ -45,7 +44,6 @@ function Home() {
       <Header />
       <FirstSection />
       <SecondSection />
-      {/* <Video /> */}
       <div ref={dashboardSectionRef}>
         <DashboardSection />
       </div>
