@@ -168,14 +168,14 @@ function FirstSection() {
         initial="initial"
         animate="animate"
       >
-        <div className="bgvideo">
+        <motion.div variants={fadeVariants} className="bgvideo">
           <video autoPlay loop muted playsInline>
             <source
-              src="https://res.cloudinary.com/divbobkmd/video/upload/v1695487376/Cyper%20studio/cube-loop-comp_em4pjt.mp4"
-              type="video/mp4"
+              src="https://res.cloudinary.com/divbobkmd/video/upload/v1695302345/cube-loop_pwawki.webm"
+              type="video/webm"
             />
           </video>
-        </div>
+        </motion.div>
         <div className="container">
           <motion.h1 variants={fadeVariants}>
             We are <br />{" "}
