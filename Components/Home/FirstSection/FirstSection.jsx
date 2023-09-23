@@ -102,6 +102,10 @@ const FirstSectioncontainer = styled(motion.div)`
             border: 1px solid var(--grey);
             transition: all 0.5s ease-in-out;
 
+            @media screen and (max-width: 768px) {
+              padding: 0.3rem 1.3rem;
+            }
+
             &:hover {
               border: 1px solid var(--text-gradient-stroke);
             }
@@ -176,7 +180,7 @@ function FirstSection() {
             />
           </video>
         </motion.div>
-        <div className="container">
+        {/* <div className="container">
           <motion.h1 variants={fadeVariants}>
             We are <br />{" "}
             <div className="studio">
@@ -197,7 +201,7 @@ function FirstSection() {
           <motion.div variants={fadeVariants}>
             <Button text="Let's Talk" />
           </motion.div>
-        </div>
+        </div> */}
       </FirstSectioncontainer>
     </div>
   );
