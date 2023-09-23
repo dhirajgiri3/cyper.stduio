@@ -191,56 +191,56 @@ const UpContainers = styled(motion.div)`
     }
     10% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     20% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     30% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     40% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     50% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     60% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     70% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     80% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     90% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     100% {
@@ -254,56 +254,56 @@ const UpContainers = styled(motion.div)`
     }
     10% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     20% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     30% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     40% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     50% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     60% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     70% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     80% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     90% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     100% {
@@ -318,56 +318,56 @@ const UpContainers = styled(motion.div)`
     }
     10% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     20% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     30% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     40% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     50% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     60% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     70% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     80% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     90% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     100% {
@@ -382,56 +382,56 @@ const UpContainers = styled(motion.div)`
     }
     10% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     20% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     30% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     40% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     50% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     60% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     70% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     80% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     90% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     100% {
@@ -439,63 +439,62 @@ const UpContainers = styled(motion.div)`
     }
   }
 
-  /* Randomize movement for col5 */
   @keyframes col5Movement {
     0% {
       transform: translate(0, 0);
     }
     10% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     20% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     30% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     40% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     50% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     60% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     70% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     80% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     90% {
       transform: translate(
-        ${getRandomValue(-30, 30)}px,
-        ${getRandomValue(-30, 30)}px
+        ${getRandomValue(-200, 200)}px,
+        ${getRandomValue(-200, 200)}px
       );
     }
     100% {

@@ -7,9 +7,8 @@ import { motion } from "framer-motion";
 const DashboardSectionContainer = styled.div`
   width: 100%;
   height: 100%;
-  padding: 2.5rem 3rem;
+  padding: 2.5rem 10rem;
   overflow: hidden;
-  padding-bottom: 5rem;
 
   @media screen and (max-width: 1024px) {
     padding: 2.5rem 3rem;
@@ -20,27 +19,46 @@ const DashboardSectionContainer = styled.div`
   }
 
   .about-sec {
-    width: 60%;
-    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     font-family: var(--light-font);
     font-size: var(--para);
-
-    @media screen and (max-width: 1024px) {
-      width: 70%;
-    }
+    gap: 2rem;
 
     @media screen and (max-width: 768px) {
-      width: 100%;
-      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .split {
+      width: 65%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .video {
+      width: 35%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    video {
+      height: 15rem;
+      width: 15rem;
+      object-fit: cover;
+      border-radius: 100%;
     }
   }
 
   hr {
     margin: 3rem 0;
-    border: 0.3px #ffc74d solid;
+    border: 0.3px #ffffff solid;
     height: 0.5px;
   }
 
@@ -62,12 +80,10 @@ const DashboardSectionContainer = styled.div`
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      gap: 10rem;
+      gap: 7rem;
 
       @media screen and (max-width: 768px) {
         gap: 3rem;
-        justify-content: flex-start;
-        align-items: flex-start;
       }
 
       .primary {
@@ -95,7 +111,7 @@ const DashboardSectionContainer = styled.div`
           color: var(--white);
           font-weight: 500;
           font-family: var(--heading-font);
-          width: 70%;
+          width: 90%;
           margin: 0 auto;
 
           @media screen and (max-width: 768px) {
@@ -106,13 +122,14 @@ const DashboardSectionContainer = styled.div`
       }
 
       .secondary {
-        width: 60%;
+        width: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         text-align: center;
         gap: 3rem;
+        margin-top: 3rem;
 
         @media screen and (max-width: 1024px) {
           gap: 1.5rem;
@@ -161,17 +178,28 @@ const DashboardSection = () => {
   return (
     <DashboardSectionContainer>
       <div className="about-sec">
-        <SplitReveal
-          width="100%"
-          fontsize="1rem"
-          lineheight="1.5"
-          fontweight="300"
-          letterSpace="0"
-          tfont="1rem"
-          mfont="1rem"
-          text="Cyper Studio, an emerging agency, embodies dynamism and creativity, driven by a dedicated team eager to bring your vision to life. We are your partners in progress, committed to exceeding expectations and pushing boundaries in the digital landscape."
-          dangerouslySetInnerHTML={true}
-        />
+        <div className="split">
+          <SplitReveal
+            width="100%"
+            fontsize="1rem"
+            lineheight="1.5"
+            fontweight="300"
+            letterSpace="0"
+            tfont="1rem"
+            mfont="1rem"
+            text="Cyper Studio, an emerging agency, embodies dynamism and creativity, driven by a dedicated team eager to bring your vision to life. We are your partners in progress, committed to exceeding expectations and pushing boundaries in the digital landscape."
+            dangerouslySetInnerHTML={true}
+          />
+        </div>
+        <div className="video">
+          <video
+            playsInline
+            loop
+            autoPlay
+            muted
+            src="https://res.cloudinary.com/divbobkmd/video/upload/v1695425223/Cyper%20studio/yes-oh_mnadqn.mp4"
+          />
+        </div>
       </div>
       <hr />
       <div className="dashboard">
@@ -185,9 +213,7 @@ const DashboardSection = () => {
             <p>Only for clients</p>
             <h1>
               We have developed a system that provides real-time updates on the
-              progress of our current project, allowing you to stay informed
-              about all the ongoing activities and developments behind the
-              scenes.
+              progress of our current project.
             </h1>
           </motion.div>
           <motion.div
