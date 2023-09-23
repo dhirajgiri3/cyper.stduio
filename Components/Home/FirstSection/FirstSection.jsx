@@ -28,7 +28,7 @@ const FirstSectioncontainer = styled(motion.div)`
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@ const FirstSectioncontainer = styled(motion.div)`
 
   .container {
     position: relative;
-    z-index: 10000;
+    z-index: 2;
     width: 100%;
     height: 88vh;
     margin-top: 12vh;
@@ -77,6 +77,10 @@ const FirstSectioncontainer = styled(motion.div)`
 
       @media screen and (max-width: 768px) {
         font-size: 3rem;
+      }
+
+      @media screen and (max-width: 380px) {
+        font-size: 2.8rem;
       }
 
       .studio {
@@ -149,7 +153,7 @@ const fadeVariants = {
 const staggerChildrenVariants = {
   animate: {
     transition: {
-      staggerChildren: 0.5, 
+      staggerChildren: 0.5,
     },
   },
 };
