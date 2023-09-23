@@ -175,7 +175,7 @@ function FirstSection() {
         <motion.div variants={fadeVariants} className="bgvideo">
           <video autoPlay loop muted playsInline>
             <source
-              src="https://res.cloudinary.com/divbobkmd/video/upload/v1695487376/Cyper%20studio/cube-loop-comp_em4pjt.mp4"
+              src="https://firebasestorage.googleapis.com/v0/b/cyper-studio.appspot.com/o/cube-loop-comp.mp4?alt=media&token=01d30dc4-be98-42ba-afa6-4d7b2a4cca3a"
               type="video/mp4"
             />
           </video>
