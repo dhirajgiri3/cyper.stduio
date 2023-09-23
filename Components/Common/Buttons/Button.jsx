@@ -5,10 +5,10 @@ const Buttons = styled.button`
   position: relative;
   padding: 0.8rem 1rem;
   border-radius: 5px;
-  background: linear-gradient(77deg, #5064f9c0 60%, #8c00ffdf);
+  background: linear-gradient(77deg, #2a42ffc0 60%, #8c00ffc0);
   backdrop-filter: blur(10px);
   color: #eee;
-  border: 1px #5065f9 solid;
+  border: 1px #2a42ff solid;
   box-shadow: 2px 5px 40px #8c00ffc0;
   font-size: 1rem;
   transition: all 0.5s ease-in-out;
@@ -16,7 +16,7 @@ const Buttons = styled.button`
   overflow: hidden;
 
   &:hover {
-    background: linear-gradient(77deg, #5065f999 70%, #8c00ff99);
+    background: linear-gradient(77deg, #2a42ff99 70%, #8c00ff99);
     box-shadow: 2px 5px 40px #8c00ff;
   }
 
@@ -27,7 +27,7 @@ const Buttons = styled.button`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(77deg, #5065f999, #8c00ff90);
+    background: linear-gradient(77deg, #2a42ff99, #8c00ff90);
     transform: translateX(-110%);
     transition: transform 0.5s ease-in-out;
     z-index: -1;
@@ -40,7 +40,7 @@ const Buttons = styled.button`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(77deg, #5065f999, #8c00ff90);
+    background: linear-gradient(77deg, #2a42ff99, #8c00ff90);
     transform: translateX(110%);
     transition: transform 0.5s ease-in-out;
     z-index: -1;

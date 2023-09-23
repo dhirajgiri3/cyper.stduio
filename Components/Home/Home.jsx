@@ -43,7 +43,7 @@ function Home() {
 
     if (dashboardSectionInView) {
       tl.to(HomeContainerRef.current, {
-        backgroundColor: "#5065f9",
+        backgroundColor: "#2a42ff",
         duration: 0.5,
       });
     } else {
@@ -65,7 +65,7 @@ function Home() {
         muted
         className="introvid"
         src="https://res.cloudinary.com/divbobkmd/video/upload/v1695467978/Cyper%20studio/cyper-intro_bfs06k.mp4"
-      ></video>
+      />
       <div ref={dashboardSectionRef}>
         <DashboardSection />
       </div>
