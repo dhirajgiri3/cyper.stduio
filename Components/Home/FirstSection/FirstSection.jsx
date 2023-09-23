@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import Button from "@/Components/Common/Buttons/Button";
 import { motion } from "framer-motion";
+import { isIOS, isAndroid, isWindows } from "react-device-detect";
 
 const FirstSectioncontainer = styled(motion.div)`
   width: 100%;
@@ -165,6 +166,16 @@ const staggerChildrenVariants = {
 };
 
 function FirstSection() {
+  // Determine the video source based on the platform
+  let videoSource = "";
+  if (isAndroid) {
+    videoSource =
+      "https://res.cloudinary.com/divbobkmd/video/upload/v1695302345/cube-loop_pwawki.webm";
+  } else if (isIOS || isWindows) {
+    videoSource =
+      "https://res.cloudinary.com/divbobkmd/video/upload/v1695487376/Cyper%20studio/cube-loop-comp_em4pjt.mp4";
+  }
+
   return (
     <div>
       <FirstSectioncontainer
@@ -174,10 +185,7 @@ function FirstSection() {
       >
         <motion.div variants={fadeVariants} className="bgvideo">
           <video autoPlay loop muted playsInline>
-            <source
-              src="https://uploads-ssl.webflow.com/6478fa4e7e9547c7d81368ff/649d7617ba75cbd92761d297_abstract-cubic-shape-animation-loop-with-detailed-2022-05-09-23-05-33-utc%20(1)-transcode.webm"
-              type="video/webm"
-            />
+            <source src={videoSource} type="video/mp4" />
           </video>
         </motion.div>
         <div className="container">
@@ -206,5 +214,4 @@ function FirstSection() {
     </div>
   );
 }
-
 export default FirstSection;
