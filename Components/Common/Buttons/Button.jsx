@@ -9,7 +9,7 @@ const Buttons = styled.button`
   backdrop-filter: blur(10px);
   color: #eee;
   border: 1px #5a3cdf solid;
-  box-shadow: 2px 5px 40px #8c00ffc0;
+  box-shadow: 2px 5px 40px #8c00ff99;
   font-size: 1rem;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
@@ -17,7 +17,7 @@ const Buttons = styled.button`
 
   &:hover {
     background: linear-gradient(77deg, #5a3cdf99 70%, #8c00ff99);
-    box-shadow: 2px 5px 40px #8c00ff;
+    box-shadow: 2px 5px 40px #8c00fff0;
   }
 
   &::before {
