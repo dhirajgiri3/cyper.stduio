@@ -14,7 +14,7 @@ const HeaderContainer = styled(motion.div)`
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 0;
+  top: 1.5rem;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -232,7 +232,7 @@ const Sidebars = styled.div`
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1001;
+  z-index: 10001;
   transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(-120%);
@@ -320,37 +320,35 @@ function Header() {
         initial="initial"
         animate="animate"
       >
-        <FixedElement top={20}>
-          <div className="container">
-            <div className="left">
-              <Image
-                src={logo}
-                alt="Cyper studio Logo"
-                title="Cyper studio Logo"
-              />
+        <div className="container">
+          <div className="left">
+            <Image
+              src={logo}
+              alt="Cyper studio Logo"
+              title="Cyper studio Logo"
+            />
+          </div>
+          <div ref={midRef} className="mid">
+            <h3>Cyper Studio</h3>
+          </div>
+          <div className="right">
+            <div className="time">
+              <p> London, UK : {dateTime}</p>
             </div>
-            <div ref={midRef} className="mid">
-              <h3>Cyper Studio</h3>
-            </div>
-            <div className="right">
-              <div className="time">
-                <p> London, UK : {dateTime}</p>
-              </div>
-              <div className="bar">
-                <label className="hamburger">
-                  <input type="checkbox" onClick={showSidebar} />
-                  <svg viewBox="0 0 32 32">
-                    <path
-                      className="line line-top-bottom"
-                      d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
-                    ></path>
-                    <path className="line" d="M7 16 27 16"></path>
-                  </svg>
-                </label>
-              </div>
+            <div className="bar">
+              <label className="hamburger">
+                <input type="checkbox" onClick={showSidebar} />
+                <svg viewBox="0 0 32 32">
+                  <path
+                    className="line line-top-bottom"
+                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                  ></path>
+                  <path className="line" d="M7 16 27 16"></path>
+                </svg>
+              </label>
             </div>
           </div>
-        </FixedElement>
+        </div>
       </HeaderContainer>
       <BlackBg ref={bgRef} />
       <Sidebars ref={sidebarRef}>

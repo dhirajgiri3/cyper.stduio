@@ -7,7 +7,7 @@ const SecondSectionContainer = styled.div`
   width: 100%;
   min-height: 30vh;
   height: 100%;
-  padding: 5rem 10rem;
+  padding: 2.5rem 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,11 +16,11 @@ const SecondSectionContainer = styled.div`
   gap: 5rem;
 
   @media screen and (max-width: 1024px) {
-    padding: 3rem 5rem;
+    padding: 2.5rem 5rem;
   }
 
   @media screen and (max-width: 768px) {
-    padding: 3rem 1rem;
+    padding: 2.5rem 1rem;
   }
 
   .secondsectioncontainer {
@@ -172,7 +172,7 @@ const fadeVariants = {
     transition: {
       duration: 1,
       ease: "easeInOut",
-      delay: 0.3,
+      delay: 0.1,
     },
   },
 };

@@ -52,7 +52,7 @@ const FirstSectioncontainer = styled(motion.div)`
     height: 88vh;
     margin-top: 12vh;
     display: flex;
-    padding: 0 10rem;
+    padding: 2.5rem 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,11 +62,11 @@ const FirstSectioncontainer = styled(motion.div)`
 
     @media screen and (max-width: 1024px) {
       height: 64vh;
-      padding: 0 5rem;
+      padding: 2.5rem 5rem;
     }
 
     @media screen and (max-width: 768px) {
-      padding: 0 1rem;
+      padding: 2.5rem 1rem;
       height: 88vh;
     }
 
@@ -141,7 +141,7 @@ const fadeVariants = {
     transition: {
       duration: 1,
       ease: "easeInOut",
-      delay: 0.3,
+      delay: 0.1,
     },
   },
 };
@@ -149,7 +149,7 @@ const fadeVariants = {
 const staggerChildrenVariants = {
   animate: {
     transition: {
-      staggerChildren: 0.3, // Adjust the stagger delay as needed
+      staggerChildren: 0.5, 
     },
   },
 };
@@ -160,7 +160,7 @@ function FirstSection() {
       <FirstSectioncontainer
         variants={staggerChildrenVariants}
         initial="initial"
-        animate="animate" // Add animate here to trigger animation
+        animate="animate"
       >
         <motion.div variants={fadeVariants} className="bgvideo">
           <video

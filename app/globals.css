@@ -50,6 +50,26 @@
   font-family: "grot-wide";
   src: url("../Assets/Fonts/Fontspring-DEMO-rocgroteskextrawide-regular.otf");
 }
+@font-face {
+  font-family: "manrope-mid";
+  src: url("../Assets/Fonts/manrope-medium.otf");
+}
+@font-face {
+  font-family: "manrope-bold";
+  src: url("../Assets/Fonts/manrope-bold.otf");
+}
+@font-face {
+  font-family: "manrope-extra";
+  src: url("../Assets/Fonts/manrope-extrabold.otf");
+}
+@font-face {
+  font-family: "manrope-light";
+  src: url("../Assets/Fonts/manrope-light.otf");
+}
+@font-face {
+  font-family: "manrope";
+  src: url("../Assets/Fonts/manrope-regular.otf");
+}
 
 :root {
   --text-gradient: linear-gradient(97deg, #7400ff 0%, #d600cf 60%, #da0071 80%);
@@ -74,13 +94,19 @@
 
   --para-color: #ffffff99;
 
-  --font: "circular";
+  --font: "manrope";
 
   --heading-font: "grot-bold";
 
   --wide-font: "grot-widebold";
 
-  --light-font: "circular-light";
+  --light-font: "manrope-light";
+
+  --mid-font: "manrope-mid";
+
+  --bold-font: "manrope-bold";
+
+  --extra-font: "manrope-extra";
 
   --para: 0.8rem;
 
@@ -97,14 +123,39 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: inherit;
 }
 
 body {
   background: #000;
   font-family: var(--font);
   color: #eee;
+  scroll-behavior: smooth;
 
   a {
     text-decoration: none;
   }
+}
+
+/* Hide the scrollbar by default */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  border-radius: 0.4rem;
+  height: auto !important ;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+}
+
+/* Style the scrollbar thumb and track */
+body::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;
+  border-radius: 0.4em;
 }

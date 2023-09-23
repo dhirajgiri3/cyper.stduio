@@ -45,7 +45,6 @@ const TrustContainer = styled(motion.div)`
     flex-wrap: nowrap;
     overflow: hidden;
     overflow-x: scroll;
-    padding: 0 1rem;
 
     @media screen and (max-width: 1024px) {
       width: calc(100vw - 10rem);
@@ -53,6 +52,7 @@ const TrustContainer = styled(motion.div)`
 
     @media screen and (max-width: 768px) {
       width: calc(100vw - 4rem);
+      padding: 0 1rem;
     }
 
     &::-webkit-scrollbar {
@@ -109,7 +109,7 @@ const fadeVariants = {
     transition: {
       duration: 1,
       ease: "easeInOut",
-      delay: 0.3,
+      delay: 0.1,
     },
   },
 };
