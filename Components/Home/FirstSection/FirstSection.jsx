@@ -172,7 +172,7 @@ function FirstSection() {
           <video autoPlay loop muted playsInline>
             <source
               src="https://res.cloudinary.com/divbobkmd/video/upload/v1695487376/Cyper%20studio/cube-loop-comp_em4pjt.mp4"
-              type="video/webm"
+              type="video/mp4"
             />
           </video>
         </div>
