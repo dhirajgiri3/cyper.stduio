@@ -5,19 +5,19 @@ const Buttons = styled.button`
   position: relative;
   padding: 0.8rem 1rem;
   border-radius: 5px;
-  background: linear-gradient(77deg, #7400ff99 60%, #3911ff99);
+  background: linear-gradient(77deg, #5064f9c0 60%, #8c00ffdf);
   backdrop-filter: blur(10px);
   color: #eee;
-  border: 1px #7400ff solid;
-  box-shadow: 2px 5px 40px #7400ff99;
+  border: 1px #5065f9 solid;
+  box-shadow: 2px 5px 40px #8c00ffc0;
   font-size: 1rem;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   overflow: hidden;
 
   &:hover {
-    background: linear-gradient(77deg, #7400ff99 70%, #3911ff99);
-    box-shadow: 2px 5px 40px #7400ff;
+    background: linear-gradient(77deg, #5065f999 70%, #8c00ff99);
+    box-shadow: 2px 5px 40px #8c00ff;
   }
 
   &::before {
@@ -27,7 +27,7 @@ const Buttons = styled.button`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(77deg, #7400ff99, #3911ff90);
+    background: linear-gradient(77deg, #5065f999, #8c00ff90);
     transform: translateX(-110%);
     transition: transform 0.5s ease-in-out;
     z-index: -1;
@@ -40,7 +40,7 @@ const Buttons = styled.button`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(77deg, #7400ff99, #3911ff90);
+    background: linear-gradient(77deg, #5065f999, #8c00ff90);
     transform: translateX(110%);
     transition: transform 0.5s ease-in-out;
     z-index: -1;

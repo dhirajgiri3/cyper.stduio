@@ -15,6 +15,20 @@ const HomeContainer = styled.div`
   height: 100%;
   background: #000;
   transition: background-color 0.5s ease;
+
+  .introvid {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+    @media screen and (max-width: 1024px) {
+      height: 30vh;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 40vh;
+    }
+  }
 `;
 
 function Home() {
@@ -29,7 +43,7 @@ function Home() {
 
     if (dashboardSectionInView) {
       tl.to(HomeContainerRef.current, {
-        backgroundColor: "#7400ff",
+        backgroundColor: "#5065f9",
         duration: 0.5,
       });
     } else {
@@ -45,7 +59,13 @@ function Home() {
       <Header />
       <FirstSection />
       <SecondSection />
-      <Video />
+      <video
+        autoPlay
+        loop
+        muted
+        className="introvid"
+        src="https://res.cloudinary.com/divbobkmd/video/upload/v1695467978/Cyper%20studio/cyper-intro_bfs06k.mp4"
+      ></video>
       <div ref={dashboardSectionRef}>
         <DashboardSection />
       </div>
