@@ -202,13 +202,12 @@ const DashboardSection = () => {
           whileInView="animate"
           className="meme-video"
         >
-          <video
-            loop
-            autoPlay
-            muted
-            playsInline
-            src="https://res.cloudinary.com/divbobkmd/video/upload/v1695425223/Cyper%20studio/yes-oh_mnadqn.mp4"
-          />
+          <video loop autoPlay muted playsInline>
+            <source
+              src="https://res.cloudinary.com/divbobkmd/video/upload/v1695425223/Cyper%20studio/yes-oh_mnadqn.mp4"
+              type="video/mp4"
+            />
+          </video>
         </motion.div>
       </div>
       <hr />

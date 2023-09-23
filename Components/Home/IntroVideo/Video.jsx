@@ -26,14 +26,12 @@ const VideoContainer = styled.div`
 function Video() {
   return (
     <VideoContainer>
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="introvid"
-        src="https://res.cloudinary.com/divbobkmd/video/upload/v1695467978/Cyper%20studio/cyper-intro_bfs06k.mp4"
-      ></video>
+      <video autoPlay loop muted playsInline className="introvid">
+        <source
+          src="https://res.cloudinary.com/divbobkmd/video/upload/v1695467978/Cyper%20studio/cyper-intro_bfs06k.mp4"
+          type="video/mp4"
+        />
+      </video>
     </VideoContainer>
   );
 }
