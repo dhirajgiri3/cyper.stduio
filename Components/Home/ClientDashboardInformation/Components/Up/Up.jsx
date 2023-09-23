@@ -126,50 +126,30 @@ const UpContainers = styled(motion.div)`
 
     .col1 {
       animation: col1Movement 30s linear infinite;
-
-      @media screen and (max-width: 767px) {
-        animation: none !important;
-      }
     }
 
     .col2 {
       animation: col2Movement 30s linear infinite;
       margin-top: 5rem;
       margin-left: -10rem;
-
-      @media screen and (max-width: 767px) {
-        animation: none !important;
-      }
     }
 
     .col3 {
       animation: col3Movement 30s linear infinite;
       margin-left: 2rem;
       margin-bottom: 3rem;
-
-      @media screen and (max-width: 767px) {
-        animation: none !important;
-      }
     }
 
     .col4 {
       animation: col4Movement 30s linear infinite;
       margin-bottom: 3rem;
       margin-right: 3rem;
-
-      @media screen and (max-width: 767px) {
-        animation: none !important;
-      }
     }
 
     .col5 {
       animation: col5Movement 30s linear infinite;
       margin-top: 2rem;
       margin-left: 2rem;
-
-      @media screen and (max-width: 767px) {
-        animation: none !important;
-      }
     }
 
     /* Style the images within the columns */
