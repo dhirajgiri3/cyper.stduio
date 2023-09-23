@@ -63,7 +63,10 @@ const HeaderContainer = styled(motion.div)`
       align-items: center;
 
       a {
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         img {
           height: 3rem;
           width: 3rem;

@@ -7,6 +7,7 @@ const Buttons = styled.button`
   border-radius: 5px;
   background: linear-gradient(77deg, #5a3cdfc0 60%, #8c00ffc0);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: #eee;
   border: 1px #5a3cdf solid;
   box-shadow: 2px 5px 40px #8c00ff99;

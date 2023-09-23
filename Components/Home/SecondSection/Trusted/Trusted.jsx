@@ -59,6 +59,11 @@ const TrustContainer = styled(motion.div)`
       width: 0;
     }
 
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+      width: 0;
+    }
+
     img {
       width: 8rem;
       height: 5rem;
@@ -145,4 +150,3 @@ function Trusted() {
 }
 
 export default Trusted;
-
