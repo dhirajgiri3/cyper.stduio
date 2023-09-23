@@ -40,7 +40,7 @@ const DashboardSectionContainer = styled.div`
       }
     }
 
-    .video {
+    .meme-video {
       width: 35%;
 
       @media screen and (max-width: 768px) {
@@ -191,7 +191,7 @@ const DashboardSection = () => {
             dangerouslySetInnerHTML={true}
           />
         </div>
-        <div className="video">
+        <div className="meme-video">
           <video
             playsInline
             loop
