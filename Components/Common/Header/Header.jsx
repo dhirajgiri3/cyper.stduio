@@ -30,6 +30,7 @@ const HeaderContainer = styled(motion.div)`
   .container {
     background: #00000010;
     backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     height: 8vh;
     width: calc(100vw - 20rem);
     padding: 1rem;
@@ -226,8 +227,8 @@ const Sidebars = styled.div`
   overflow: hidden;
   overflow-y: scroll;
   background: rgba(0, 0, 0, 0.5);
-  /* background: #fff; */
   backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
   color: var(--white);
   position: fixed;
   left: 0;

@@ -19,7 +19,7 @@ const SecondSectionContainer = styled.div`
     padding: 2.5rem 5rem;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding: 2.5rem 1rem;
   }
 
@@ -49,7 +49,7 @@ const SecondSectionContainer = styled.div`
       gap: 2rem;
       flex-wrap: wrap;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         flex-direction: column;
       }
     }
@@ -85,11 +85,8 @@ const OutlineTxt = styled.h1`
   mix-blend-mode: difference;
   transition: background-image 0.5s ease-in-out;
 
-  @media screen and (max-width: 768px) {
-    font-size: 3.2rem;
-  }
-  @media screen and (max-width: 376px) {
-    font-size: 3rem;
+  @media screen and (max-width: 767px) {
+    font-size: 2.8rem;
   }
 
   &:hover {
@@ -129,7 +126,7 @@ const OutlineTxt = styled.h1`
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       top: -50%;
     }
   }

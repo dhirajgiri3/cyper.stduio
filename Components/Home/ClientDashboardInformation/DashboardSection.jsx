@@ -14,7 +14,7 @@ const DashboardSectionContainer = styled.div`
     padding: 2.5rem 3rem;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding: 0rem 1rem;
   }
 
@@ -27,7 +27,7 @@ const DashboardSectionContainer = styled.div`
     font-size: var(--para);
     gap: 2rem;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       flex-direction: column;
       justify-content: center;
     }
@@ -35,7 +35,7 @@ const DashboardSectionContainer = styled.div`
     .split {
       width: 65%;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         width: 100%;
       }
     }
@@ -43,7 +43,7 @@ const DashboardSectionContainer = styled.div`
     .meme-video {
       width: 35%;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         width: 100%;
       }
     }
@@ -53,6 +53,10 @@ const DashboardSectionContainer = styled.div`
       width: 15rem;
       object-fit: cover;
       border-radius: 100rem;
+
+      @media screen and (max-width: 767px) {
+        border-radius: 0;
+      }
     }
   }
 
@@ -82,7 +86,7 @@ const DashboardSectionContainer = styled.div`
       flex-direction: column;
       gap: 7rem;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         gap: 3rem;
       }
 
@@ -95,7 +99,7 @@ const DashboardSectionContainer = styled.div`
         text-align: center;
         gap: 3rem;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           gap: 1.5rem;
         }
 
@@ -114,7 +118,7 @@ const DashboardSectionContainer = styled.div`
           width: 90%;
           margin: 0 auto;
 
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 767px) {
             font-size: var(--heading-mid);
             width: 98%;
           }
@@ -136,7 +140,7 @@ const DashboardSectionContainer = styled.div`
           width: 80%;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           gap: 1.5rem;
           width: 98%;
         }
@@ -149,7 +153,7 @@ const DashboardSectionContainer = styled.div`
           width: 80%;
           margin: 0 auto;
 
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 767px) {
             width: 100%;
           }
         }
@@ -211,8 +215,8 @@ const DashboardSection = () => {
           >
             <p>Only for clients</p>
             <h1>
-              We have developed a system that provides real-time updates on the
-              progress of our current project.
+              We have developed a system that provides realtime updates on the
+              progress of your current project.
             </h1>
           </motion.div>
           <motion.div

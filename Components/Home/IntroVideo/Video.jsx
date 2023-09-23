@@ -1,54 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5rem;
-
-  @media screen and (max-width: 1024px) {
-    margin-bottom: 3rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    margin-bottom: 5rem;
-  }
-
-  .introvid {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    transition: all 0.5s ease-in-out;
-
-    @media screen and (max-width: 1024px) {
-      height: 40vh;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 768px) {
-      height: 30vh;
-      width: 100%;
-    }
-  }
-`;
+import React from 'react'
 
 function Video() {
   return (
-    <div>
-      <Container>
-        <video
-          src="https://res.cloudinary.com/divbobkmd/video/upload/v1695302321/cyper-intro_zcyuip.mp4"
-          loop
-          muted
-          autoPlay
-          className="introvid"
-        ></video>
-      </Container>
-    </div>
-  );
+    <div>Video</div>
+  )
 }
 
-export default Video;
+export default Video

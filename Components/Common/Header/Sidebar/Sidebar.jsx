@@ -14,7 +14,6 @@ const SidebarContainer = styled.div`
   gap: 5rem;
 
   @media screen and (max-width: 768px) {
-    /* flex-direction: column-reverse; */
     justify-content: flex-start;
     gap: 4rem;
     margin-top: 14vh;
