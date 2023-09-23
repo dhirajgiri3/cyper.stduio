@@ -24,7 +24,7 @@ const HeaderContainer = styled(motion.div)`
   @media screen and (max-width: 1024px) {
     padding: 0 5rem;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding: 0 0.5rem;
   }
 
@@ -47,7 +47,7 @@ const HeaderContainer = styled(motion.div)`
       width: calc(100vw - 10rem);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       height: 7vh;
       width: calc(100vw - 1rem);
     }
@@ -75,7 +75,7 @@ const HeaderContainer = styled(motion.div)`
     .mid {
       display: none;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         opacity: 0;
         transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
         display: block;
@@ -102,7 +102,7 @@ const HeaderContainer = styled(motion.div)`
           color: var(--white);
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           display: none;
         }
       }
@@ -174,7 +174,7 @@ const HeaderContainer = styled(motion.div)`
           height: 1.6rem;
           transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 767px) {
             height: 1.7rem;
           }
 
@@ -255,7 +255,7 @@ const Sidebars = styled.div`
     height: 70vh;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 100vw;
     height: 100vh;
     z-index: 999;

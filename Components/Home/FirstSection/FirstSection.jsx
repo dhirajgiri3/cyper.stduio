@@ -18,7 +18,7 @@ const FirstSectioncontainer = styled(motion.div)`
     height: 70vh;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     height: 100vh;
   }
 
@@ -39,7 +39,7 @@ const FirstSectioncontainer = styled(motion.div)`
       object-fit: contain;
       opacity: 0.7;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         object-fit: cover;
       }
     }
@@ -67,7 +67,7 @@ const FirstSectioncontainer = styled(motion.div)`
       padding: 2.5rem 5rem;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       padding: 2.5rem 1rem;
       height: 88vh;
     }
@@ -77,7 +77,7 @@ const FirstSectioncontainer = styled(motion.div)`
       font-size: var(--large);
       color: var(--white);
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         font-size: 3rem;
       }
 
@@ -129,7 +129,7 @@ const FirstSectioncontainer = styled(motion.div)`
         width: 90%;
       }
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         width: 100%;
       }
     }

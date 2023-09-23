@@ -30,11 +30,12 @@ const DashboardSectionContainer = styled.div`
     margin-bottom: 1rem;
 
     @media screen and (max-width: 1024px) {
-      height: 30vh;
+      height: 40vh;
+      object-fit: contain;
     }
 
-    @media screen and (max-width: 768px) {
-      height: 40vh;
+    @media screen and (max-width: 767px) {
+      height: 30vh;
       margin-bottom: 3rem;
     }
   }

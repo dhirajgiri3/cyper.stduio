@@ -43,7 +43,7 @@ const UpContainers = styled(motion.div)`
       background: #fff;
       border-bottom-left-radius: 0;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         width: 3.5rem;
         height: 3.5rem;
         mix-blend-mode: difference;
