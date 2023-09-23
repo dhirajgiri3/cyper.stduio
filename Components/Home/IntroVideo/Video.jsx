@@ -30,6 +30,7 @@ function Video() {
         autoPlay
         loop
         muted
+        playsInline
         className="introvid"
         src="https://res.cloudinary.com/divbobkmd/video/upload/v1695467978/Cyper%20studio/cyper-intro_bfs06k.mp4"
       ></video>

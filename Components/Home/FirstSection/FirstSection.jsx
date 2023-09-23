@@ -168,6 +168,7 @@ function FirstSection() {
             autoPlay
             loop
             muted
+            playsInline
           />
         </motion.div>
         <div className="container">
