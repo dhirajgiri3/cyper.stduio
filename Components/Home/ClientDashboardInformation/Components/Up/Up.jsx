@@ -125,7 +125,7 @@ const UpContainers = styled(motion.div)`
     }
 
     .col1 {
-      animation: col1Movement 10s linear infinite;
+      animation: col1Movement 30s linear infinite;
 
       @media screen and (max-width: 767px) {
         animation: none !important;
@@ -133,7 +133,7 @@ const UpContainers = styled(motion.div)`
     }
 
     .col2 {
-      animation: col2Movement 10s linear infinite;
+      animation: col2Movement 30s linear infinite;
       margin-top: 5rem;
       margin-left: -10rem;
 
@@ -143,7 +143,7 @@ const UpContainers = styled(motion.div)`
     }
 
     .col3 {
-      animation: col3Movement 10s linear alternate infinite;
+      animation: col3Movement 30s linear infinite;
       margin-left: 2rem;
       margin-bottom: 3rem;
 
@@ -153,7 +153,7 @@ const UpContainers = styled(motion.div)`
     }
 
     .col4 {
-      animation: col4Movement 10s linear infinite;
+      animation: col4Movement 30s linear infinite;
       margin-bottom: 3rem;
       margin-right: 3rem;
 
@@ -163,7 +163,7 @@ const UpContainers = styled(motion.div)`
     }
 
     .col5 {
-      animation: col5Movement 10s linear infinite;
+      animation: col5Movement 30s linear infinite;
       margin-top: 2rem;
       margin-left: 2rem;
 

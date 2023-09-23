@@ -15,7 +15,7 @@ const DashboardSectionContainer = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    padding: 2.5rem 1rem;
+    padding: 0rem 1rem;
   }
 
   .about-sec {
@@ -52,7 +52,7 @@ const DashboardSectionContainer = styled.div`
       height: 15rem;
       width: 15rem;
       object-fit: cover;
-      border-radius: 100%;
+      border-radius: 100rem;
     }
   }
 

@@ -7,7 +7,15 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2.5rem 0;
+  margin-bottom: 5rem;
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 5rem;
+  }
 
   .introvid {
     width: 100%;
@@ -21,7 +29,7 @@ const Container = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-      height: 50vh;
+      height: 30vh;
     }
   }
 `;
