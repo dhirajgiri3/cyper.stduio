@@ -180,7 +180,7 @@ function FirstSection() {
             />
           </video>
         </motion.div>
-        {/* <div className="container">
+        <div className="container">
           <motion.h1 variants={fadeVariants}>
             We are <br />{" "}
             <div className="studio">
@@ -201,7 +201,7 @@ function FirstSection() {
           <motion.div variants={fadeVariants}>
             <Button text="Let's Talk" />
           </motion.div>
-        </div> */}
+        </div>
       </FirstSectioncontainer>
     </div>
   );
