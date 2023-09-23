@@ -7,15 +7,36 @@ import { motion } from "framer-motion";
 const DashboardSectionContainer = styled.div`
   width: 100%;
   height: 100%;
-  padding: 2.5rem 10rem;
   overflow: hidden;
 
-  @media screen and (max-width: 1024px) {
-    padding: 2.5rem 3rem;
+  .container {
+    padding: 2.5rem 10rem;
+    height: 100%;
+    width: 100%;
+
+    @media screen and (max-width: 1024px) {
+      padding: 2.5rem 3rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 0rem 1rem;
+    }
   }
 
-  @media screen and (max-width: 767px) {
-    padding: 0rem 1rem;
+  .introvid {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 1024px) {
+      height: 30vh;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 40vh;
+      margin-bottom: 3rem;
+    }
   }
 
   .about-sec {
@@ -64,6 +85,15 @@ const DashboardSectionContainer = styled.div`
     margin: 3rem 0;
     border: 0.3px #ffffff solid;
     height: 0.5px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 0;
+      margin-top: 3rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin: 3rem 0;
+    }
   }
 
   .dashboard {
@@ -72,6 +102,10 @@ const DashboardSectionContainer = styled.div`
     height: 100%;
     position: relative;
     z-index: 0;
+
+    @media screen and (max-width: 1024px) {
+    min-height: 70vh;
+    }
 
     .bottom {
       width: 100%;
@@ -182,65 +216,73 @@ const fadeVariants = {
 const DashboardSection = () => {
   return (
     <DashboardSectionContainer>
-      <div className="about-sec">
-        <div className="split">
-          <SplitReveal
-            width="100%"
-            fontsize="1rem"
-            lineheight="1.5"
-            fontweight="300"
-            letterSpace="0"
-            tfont="1rem"
-            mfont="1rem"
-            text="Cyper Studio, an emerging agency, embodies dynamism and creativity, driven by a dedicated team eager to bring your vision to life. We are your partners in progress, committed to exceeding expectations and pushing boundaries in the digital landscape."
-            dangerouslySetInnerHTML={true}
-          />
-        </div>
-        <motion.div
-          variants={fadeVariants}
-          initial="initial"
-          whileInView="animate"
-          className="meme-video"
-        >
-          <video loop autoPlay muted playsInline>
-            <source
-              src="https://res.cloudinary.com/divbobkmd/video/upload/v1695425223/Cyper%20studio/yes-oh_mnadqn.mp4"
-              type="video/mp4"
+      <video autoPlay loop muted playsInline className="introvid">
+        <source
+          src="https://res.cloudinary.com/divbobkmd/video/upload/v1695467978/Cyper%20studio/cyper-intro_bfs06k.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div className="container">
+        <div className="about-sec">
+          <div className="split">
+            <SplitReveal
+              width="100%"
+              fontsize="1rem"
+              lineheight="1.5"
+              fontweight="300"
+              letterSpace="0"
+              tfont="1rem"
+              mfont="1rem"
+              text="Cyper Studio, an emerging agency, embodies dynamism and creativity, driven by a dedicated team eager to bring your vision to life. We are your partners in progress, committed to exceeding expectations and pushing boundaries in the digital landscape."
+              dangerouslySetInnerHTML={true}
             />
-          </video>
-        </motion.div>
-      </div>
-      <hr />
-      <div className="dashboard">
-        <div className="bottom">
+          </div>
           <motion.div
             variants={fadeVariants}
             initial="initial"
             whileInView="animate"
-            className="primary"
+            className="meme-video"
           >
-            <p>Only for clients</p>
-            <h1>
-              We have developed a system that provides realtime updates on the
-              progress of your current project.
-            </h1>
-          </motion.div>
-          <motion.div
-            variants={fadeVariants}
-            initial="initial"
-            whileInView="animate"
-            className="secondary"
-          >
-            <p>Hey excited for this...?</p>
-            <p>
-              Once the agreement is formalized between our parties, you will be
-              provided with a unique project ID. This project ID will grant you
-              access to our dedicated client portal, allowing you to monitor the
-              real-time progress of your project.
-            </p>
+            <video loop autoPlay muted playsInline>
+              <source
+                src="https://res.cloudinary.com/divbobkmd/video/upload/v1695425223/Cyper%20studio/yes-oh_mnadqn.mp4"
+                type="video/mp4"
+              />
+            </video>
           </motion.div>
         </div>
-        <Up />
+        <hr />
+        <div className="dashboard">
+          <div className="bottom">
+            <motion.div
+              variants={fadeVariants}
+              initial="initial"
+              whileInView="animate"
+              className="primary"
+            >
+              <p>Only for clients</p>
+              <h1>
+                We have developed a system that provides realtime updates on the
+                progress of your current project.
+              </h1>
+            </motion.div>
+            <motion.div
+              variants={fadeVariants}
+              initial="initial"
+              whileInView="animate"
+              className="secondary"
+            >
+              <p>Hey excited for this...?</p>
+              <p>
+                Once the agreement is formalized between our parties, you will
+                be provided with a unique project ID. This project ID will grant
+                you access to our dedicated client portal, allowing you to
+                monitor the real-time progress of your project.
+              </p>
+            </motion.div>
+          </div>
+          <Up />
+        </div>
       </div>
     </DashboardSectionContainer>
   );

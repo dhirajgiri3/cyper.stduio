@@ -27,7 +27,7 @@ const Buttons = styled.button`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(77deg, #5a3cdf99, #8c00ff90);
+    background: linear-gradient(77deg, #5a3cdfc0, #8c00ffc0);
     transform: translateX(-110%);
     transition: transform 0.5s ease-in-out;
     z-index: -1;
@@ -40,7 +40,7 @@ const Buttons = styled.button`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(77deg, #5a3cdf99, #8c00ff90);
+    background: linear-gradient(77deg, #5a3cdfc0, #8c00ffc0);
     transform: translateX(110%);
     transition: transform 0.5s ease-in-out;
     z-index: -1;

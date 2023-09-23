@@ -7,6 +7,7 @@ import logo from "@/Assets/Images/cyper-logo/cyper-white-logo.png";
 import Image from "next/image";
 import Sidebar from "./Sidebar/Sidebar";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HeaderContainer = styled(motion.div)`
   width: 100vw;
@@ -61,10 +62,13 @@ const HeaderContainer = styled(motion.div)`
       justify-content: flex-start;
       align-items: center;
 
-      img {
-        height: 3rem;
-        width: 3rem;
-        object-fit: cover;
+      a {
+        
+        img {
+          height: 3rem;
+          width: 3rem;
+          object-fit: cover;
+        }
       }
     }
 
@@ -304,7 +308,7 @@ function Header() {
     new Date().toLocaleString("en-GB", { timeZone: "Europe/London" })
   );
 
-  React.useEffect(() => {
+  useEffect(() => {
     const intervalId = setInterval(() => {
       setDateTime(
         new Date().toLocaleString("en-GB", { timeZone: "Europe/London" })
@@ -323,11 +327,13 @@ function Header() {
       >
         <div className="container">
           <div className="left">
-            <Image
-              src={logo}
-              alt="Cyper studio Logo"
-              title="Cyper studio Logo"
-            />
+            <Link href="/">
+              <Image
+                src={logo}
+                alt="Cyper studio Logo"
+                title="Cyper studio Logo"
+              />
+            </Link>
           </div>
           <div ref={midRef} className="mid">
             <h3>Cyper Studio</h3>

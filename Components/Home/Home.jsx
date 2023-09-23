@@ -45,7 +45,7 @@ function Home() {
       <Header />
       <FirstSection />
       <SecondSection />
-      <Video />
+      {/* <Video /> */}
       <div ref={dashboardSectionRef}>
         <DashboardSection />
       </div>
