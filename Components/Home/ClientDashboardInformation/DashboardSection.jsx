@@ -8,7 +8,10 @@ const DashboardSectionContainer = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .container {
     padding: 2.5rem 10rem;
     height: 100%;
@@ -24,13 +27,15 @@ const DashboardSectionContainer = styled.div`
   }
 
   .introvid {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    width: 80%;
+    height: 70vh;
+    object-fit: contain;
+    margin: 0 auto;
     margin-bottom: 1rem;
 
     @media screen and (max-width: 1024px) {
       height: 40vh;
+      width: 100%;
     }
 
     @media screen and (max-width: 767px) {
@@ -222,7 +227,7 @@ const DashboardSection = () => {
     <DashboardSectionContainer>
       <video autoPlay loop muted playsInline className="introvid">
         <source
-          src="https://res.cloudinary.com/divbobkmd/video/upload/v1695486025/Cyper%20studio/intro-cyper_vey6rc.mp4"
+          src="https://res.cloudinary.com/divbobkmd/video/upload/v1695486515/Cyper%20studio/intro-cyper-comp_m93u4z.mp4"
           type="video/mp4"
         />
       </video>
