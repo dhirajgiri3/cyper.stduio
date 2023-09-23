@@ -21,7 +21,7 @@ const UpContainers = styled(motion.div)`
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, 1fr);

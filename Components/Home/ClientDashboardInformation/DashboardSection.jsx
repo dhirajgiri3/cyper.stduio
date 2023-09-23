@@ -79,12 +79,13 @@ const DashboardSectionContainer = styled.div`
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 1;
+      z-index: 2;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       gap: 7rem;
+      mix-blend-mode: difference;
 
       @media screen and (max-width: 767px) {
         gap: 3rem;
