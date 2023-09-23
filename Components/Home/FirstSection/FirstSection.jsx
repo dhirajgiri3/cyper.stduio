@@ -46,8 +46,10 @@ const FirstSectioncontainer = styled(motion.div)`
   }
 
   .container {
-    position: relative;
+    position: absolute;
     z-index: 2;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 88vh;
     margin-top: 12vh;

@@ -206,6 +206,7 @@ const DashboardSection = () => {
             loop
             autoPlay
             muted
+            playsInline
             src="https://res.cloudinary.com/divbobkmd/video/upload/v1695425223/Cyper%20studio/yes-oh_mnadqn.mp4"
           />
         </motion.div>
