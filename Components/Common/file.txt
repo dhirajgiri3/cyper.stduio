@@ -1,0 +1,24 @@
+           <div className="mid">
+            <div className="first">
+              <h3>AI-Powered Branding</h3>
+              <p>
+                Our innovative AI-driven branding solutions encompass
+                AI-generated graphics, chatbots, AI interfaces, and seamless
+                integration with content and image generators. These
+                cutting-edge tools not only fuel creativity but also streamline
+                your branding efforts, guaranteeing a unique online presence.
+              </p>
+            </div>
+            <div className="second">
+              <h3>AI-Powered Marketing</h3>
+              <p>
+                In the realm of SMMA, we offer game-changing services such as
+                email marketing automation, workflow automation, and AI-fueled
+                workforce management. These tools empower your agency to work
+                efficiently, achieve maximum results, and effortlessly scale
+                your services to new heights. At Cyber Studio, we're leading the
+                way in a digital era where AI and creativity converge to
+                redefine success.
+              </p>
+            </div>
+          </div> 

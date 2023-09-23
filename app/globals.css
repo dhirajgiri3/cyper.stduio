@@ -80,9 +80,7 @@
 
   --primary: #5A3CDF;
 
-  --primary-fade: #5a3cdf;
-
-  --secondary: #07001c;
+  --secondary: #10c960;
 
   --white: #eee;
 
@@ -112,7 +110,7 @@
 
   --heading: 3rem;
 
-  --large: 7rem;
+  --large: 6rem;
 
   --heading-mid: 2rem;
 
@@ -159,3 +157,4 @@ body::-webkit-scrollbar-track {
   background: #000;
   border-radius: 0.4em;
 }
+

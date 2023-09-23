@@ -8,6 +8,7 @@ import { useInView } from "react-intersection-observer";
 import gsap from "gsap";
 import DashboardSection from "./ClientDashboardInformation/DashboardSection";
 import SecondSection from "./SecondSection/SecondSection";
+import AiServices from "./AiServiceSection/AiServices";
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -47,6 +48,7 @@ function Home() {
       <div ref={dashboardSectionRef}>
         <DashboardSection />
       </div>
+      <AiServices />
     </HomeContainer>
   );
 }
