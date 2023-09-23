@@ -175,7 +175,7 @@ function FirstSection() {
         <motion.div variants={fadeVariants} className="bgvideo">
           <video autoPlay loop muted playsInline>
             <source
-              src="https://firebasestorage.googleapis.com/v0/b/cyper-studio.appspot.com/o/cube-loop.webm?alt=media&token=7d962b0c-333b-4152-a64d-2674d0befdac"
+              src="https://uploads-ssl.webflow.com/6478fa4e7e9547c7d81368ff/649d7617ba75cbd92761d297_abstract-cubic-shape-animation-loop-with-detailed-2022-05-09-23-05-33-utc%20(1)-transcode.webm"
               type="video/mp4"
             />
           </video>
