@@ -25,11 +25,12 @@ const Container = styled.div`
 
     @media screen and (max-width: 1024px) {
       height: 40vh;
-      object-fit: cover;
+      width: 100%;
     }
 
     @media screen and (max-width: 768px) {
       height: 30vh;
+      width: 100%;
     }
   }
 `;
