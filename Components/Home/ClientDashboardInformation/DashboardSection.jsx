@@ -222,8 +222,7 @@ const DashboardSection = () => {
     <DashboardSectionContainer>
       <video autoPlay loop muted playsInline className="introvid">
         <source
-          // src="https://res.cloudinary.com/divbobkmd/video/upload/v1695482394/intro-cyper_ru9cpz.mp4"
-          src="https://res.cloudinary.com/divbobkmd/video/upload/v1695425223/Cyper%20studio/yes-oh_mnadqn.mp4"
+          src="https://res.cloudinary.com/divbobkmd/video/upload/v1695486025/Cyper%20studio/intro-cyper_vey6rc.mp4"
           type="video/mp4"
         />
       </video>
