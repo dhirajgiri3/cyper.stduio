@@ -167,7 +167,8 @@ const staggerChildrenVariants = {
 
 function FirstSection() {
   // Determine the video source based on the platform
-  let videoSource = "";
+  let videoSource =
+    "https://res.cloudinary.com/divbobkmd/video/upload/v1695487376/Cyper%20studio/cube-loop-comp_em4pjt.mp4";
   if (isAndroid) {
     videoSource =
       "https://res.cloudinary.com/divbobkmd/video/upload/v1695302345/cube-loop_pwawki.webm";
@@ -178,6 +179,7 @@ function FirstSection() {
 
   return (
     <div>
+      {/* Assuming you have defined FirstSectioncontainer, staggerChildrenVariants, fadeVariants, Link, and Button */}
       <FirstSectioncontainer
         variants={staggerChildrenVariants}
         initial="initial"
@@ -214,4 +216,5 @@ function FirstSection() {
     </div>
   );
 }
+
 export default FirstSection;
