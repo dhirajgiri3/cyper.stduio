@@ -9,6 +9,7 @@ const DashboardSectionContainer = styled.div`
   height: 100%;
   padding: 2.5rem 3rem;
   overflow: hidden;
+  padding-bottom: 5rem;
 
   @media screen and (max-width: 1024px) {
     padding: 2.5rem 3rem;
