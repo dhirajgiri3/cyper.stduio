@@ -25,7 +25,7 @@ const Container = styled.div`
 
     @media screen and (max-width: 1024px) {
       height: 40vh;
-      object-fit: contain;
+      object-fit: cover;
     }
 
     @media screen and (max-width: 768px) {
