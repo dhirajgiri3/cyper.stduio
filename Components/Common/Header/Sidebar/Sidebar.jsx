@@ -10,8 +10,11 @@ const SidebarContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-direction: row;
-  gap: 5rem;
+  gap: 10rem;
+
+  @media screen and (max-width: 1024px) {
+    gap: 5rem;
+  }
 
   @media screen and (max-width: 768px) {
     justify-content: flex-start;
@@ -36,7 +39,6 @@ const SidebarContainer = styled.div`
     align-items: flex-start;
     flex-direction: column;
     gap: 3rem;
-    flex: 1;
     text-align: left;
     ul {
       list-style: none;
@@ -75,7 +77,6 @@ const SidebarContainer = styled.div`
     align-items: flex-start;
     flex-direction: column;
     gap: 3rem;
-    flex: 1;
     ul {
       list-style: none;
       display: flex;
@@ -182,7 +183,7 @@ function Sidebar() {
             <li>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/company/cyperstudio/"
+                href="https://www.linkedin.com/company/cyper-studio/"
               >
                 LinkedIn
               </a>

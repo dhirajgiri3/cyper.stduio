@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React, { useEffect, useRef } from "react";
 import Header from "../Common/Header/Header";
@@ -9,6 +9,7 @@ import gsap from "gsap";
 import DashboardSection from "./ClientDashboardInformation/DashboardSection";
 import SecondSection from "./SecondSection/SecondSection";
 import AiServices from "./AiServiceSection/AiServices";
+import Project from "./Project/Project";
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -24,21 +25,30 @@ function Home() {
     threshold: 0.2,
   });
 
+  const [projectSectionRef, projectSectionInView] = useInView({
+    threshold: 0.2,
+  });
+
   useEffect(() => {
     const tl = gsap.timeline();
 
     if (dashboardSectionInView) {
       tl.to(HomeContainerRef.current, {
         backgroundColor: "#5a3cdf",
-        duration: 0.5,
+        duration: 0.5, // Set the duration for smooth transition
+      });
+    } else if (projectSectionInView) {
+      tl.to(HomeContainerRef.current, {
+        backgroundColor: "#fff",
+        duration: 0.5, // Set the duration for smooth transition
       });
     } else {
       tl.to(HomeContainerRef.current, {
         backgroundColor: "#000",
-        duration: 0.5,
+        duration: 0.5, // Set the duration for smooth transition
       });
     }
-  }, [dashboardSectionInView]);
+  }, [dashboardSectionInView, projectSectionInView]);
 
   return (
     <HomeContainer ref={HomeContainerRef}>
@@ -49,6 +59,9 @@ function Home() {
         <DashboardSection />
       </div>
       <AiServices />
+      <div ref={projectSectionRef}>
+        <Project />
+      </div>
     </HomeContainer>
   );
 }

@@ -82,7 +82,6 @@ const OutlineTxt = styled.h1`
   letter-spacing: 5px;
   color: #000;
   -webkit-text-stroke: 3px transparent;
-  mix-blend-mode: difference;
   transition: background-image 0.5s ease-in-out;
 
   @media screen and (max-width: 767px) {
@@ -96,7 +95,6 @@ const OutlineTxt = styled.h1`
   &::after {
     opacity: 0;
     transition: all 0.5s ease-in-out;
-    mix-blend-mode: difference;
   }
 
   &:hover::after {

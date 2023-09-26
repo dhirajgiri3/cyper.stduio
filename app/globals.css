@@ -78,7 +78,7 @@
 
   --text-gradient-stroke: #ff85eb;
 
-  --primary: #5A3CDF;
+  --primary: #5a3cdf;
 
   --secondary: #10c960;
 
@@ -114,7 +114,11 @@
 
   --heading-mid: 2rem;
 
+  --heading-sm: 1.5rem;
+
   --norm: 1rem;
+
+  --cubic: cubic-bezier(0.68, -0.55, 0.32, 1.55);
 }
 
 * {
@@ -157,4 +161,3 @@ body::-webkit-scrollbar-track {
   background: #000;
   border-radius: 0.4em;
 }
-

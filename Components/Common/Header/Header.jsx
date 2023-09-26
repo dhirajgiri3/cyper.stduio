@@ -241,9 +241,8 @@ const Sidebars = styled.div`
   left: 0;
   top: 0;
   z-index: 10001;
-  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateX(-120%);
+  transition: all 0.7s var(--cubic);
+  transform: translateX(-150%);
   padding: 3rem;
   display: flex;
   justify-content: flex-start;

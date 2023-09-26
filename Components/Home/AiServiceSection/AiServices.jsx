@@ -17,6 +17,10 @@ const AiServicesWrapper = styled.div`
   place-items: center;
   overflow: hidden;
 
+  a {
+    text-decoration: none;
+  }
+
   @media screen and (max-width: 1024px) {
     min-height: 80vh;
   }
@@ -312,10 +316,10 @@ function AiServices() {
                 label="See Our Work"
                 height="3rem"
                 width="3rem"
-                background="#222"
+                background="#3e3e3e"
                 frontbg="#603dff"
                 color="#fff"
-                hoverbg="#222"
+                hoverbg="#2e2e2e"
                 hoverColor="#fff"
                 fontsize="0.8rem"
                 mfontsize="1rem"

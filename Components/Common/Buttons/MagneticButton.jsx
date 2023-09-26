@@ -35,7 +35,7 @@ const MagneticButton = ({
     border-radius: 50%;
     overflow: hidden;
     transform-origin: bottom center;
-    transition: background-position 1.5s;
+    transition: all 1s ease-in-out;
     background-image: linear-gradient(transparent 50%, ${frontbg} 50%);
     background-size: 100% 200%;
     background-position: 0% 100%;
@@ -48,7 +48,7 @@ const MagneticButton = ({
     }
 
     p {
-      transition: all 0.3s ease-in-out;
+      transition: all 1s ease-in-out;
       white-space: nowrap;
     }
 
@@ -90,7 +90,7 @@ const MagneticButton = ({
       .lable {
         font-size: ${fontsize};
         font-weight: 100;
-        transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 1s;
 
         @media (max-width: 767px) {
           font-size: ${mfontsize};
