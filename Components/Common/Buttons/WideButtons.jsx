@@ -72,8 +72,8 @@ const WideButton = ({
       overflow: hidden;
       border-radius: 50px;
       font-family: var(--light-font);
-      background: linear-gradient(77deg, #7253ffb9 60%, #aa00ffb9);
-      box-shadow: 2px 5px 50px #a200ff85;
+      background: linear-gradient(77deg, #7253ff 60%, #aa00ff);
+      box-shadow: 2px 5px 50px #a200ffbb;
       white-space: nowrap;
 
       &:hover {

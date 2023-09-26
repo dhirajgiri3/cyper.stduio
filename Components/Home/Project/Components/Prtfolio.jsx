@@ -110,7 +110,7 @@ function Prtfolio() {
             color="#eee"
             hoverbg="#000"
             hovercolor="#eee"
-            bordercolor="#a200ff"
+            bordercolor="#a200ff80"
             hoverborder="#000"
           />
         </div>
