@@ -15,7 +15,7 @@ const HomeContainer = styled.div`
   width: 100%;
   height: 100%;
   background: #000;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease-in-out;
 `;
 
 function Home() {
@@ -39,7 +39,7 @@ function Home() {
       });
     } else if (projectSectionInView) {
       tl.to(HomeContainerRef.current, {
-        backgroundColor: "#fff",
+        backgroundColor: "#000",
         duration: 0.5, // Set the duration for smooth transition
       });
     } else {

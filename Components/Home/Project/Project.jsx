@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "./Components/Head";
 import styled from "styled-components";
+import Prtfolio from "./Components/Prtfolio";
 
 const HomeProjectContainer = styled.div`
   width: 100%;
@@ -12,6 +13,7 @@ function Project() {
   return (
     <HomeProjectContainer>
       <Head />
+      <Prtfolio />
     </HomeProjectContainer>
   );
 }

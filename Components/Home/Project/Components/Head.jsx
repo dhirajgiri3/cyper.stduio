@@ -13,6 +13,14 @@ const ProjectHeadContainer = styled.div`
   align-items: center;
   position: relative;
   z-index: 0;
+  border-top: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+
+  @media screen and (max-width: 767px) {
+    height: 40vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 
   .video {
     position: absolute;
@@ -94,11 +102,10 @@ const ProjectHeadContainer = styled.div`
 
     h3 {
       font-size: var(--heading-sm);
-      color: var(--black);
-      font-weight: 700;
+      color: var(--white);
+      font-weight: 500;
       font-family: var(--font);
       text-align: left;
-      mix-blend-mode: difference;
 
       @media screen and (max-width: 767px) {
         font-size: var(--norm);
@@ -111,13 +118,14 @@ const videoVariants = {
   initial: {
     scale: 0.5,
     y: "-200px",
-    x: 0, // Default value, you can change it to your desired default
+    x: 0,
     opacity: 0.5,
   },
   whileInView: {
     scale: 1,
     y: 0,
     x: 0,
+    opacity: 0.7,
     opacity: 1,
     transition: {
       duration: 1,
@@ -170,6 +178,9 @@ function Head() {
           realities.
         </h3>
         <Image src={star1} alt="cyper studio details" />
+        <svg className="cb-svgsprite -star">
+          <use xlinkHref="/assets/sprites/svgsprites.svg#star"></use>
+        </svg>
       </div>
     </ProjectHeadContainer>
   );

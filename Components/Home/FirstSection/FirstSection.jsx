@@ -207,7 +207,16 @@ function FirstSection() {
             path to realizing your aspirations and achieving success.
           </motion.p>
           <motion.div variants={fadeVariants}>
-            <Button text="Let's Talk" />
+            <Button
+              borderRadius="5px"
+              mfontsisze=".9rem"
+              fontsize="1rem"
+              paddingx="1.4rem"
+              paddingy=".7rem"
+              mpaddingx="1.4rem"
+              mpaddingy=".7rem"
+              text="Let's Talk"
+            />
           </motion.div>
         </div>
       </FirstSectioncontainer>

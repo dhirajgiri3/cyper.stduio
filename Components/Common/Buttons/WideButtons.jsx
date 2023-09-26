@@ -12,10 +12,10 @@ const WideButton = ({
   mpaddingx,
   mfontsize,
   color,
-  bg,
   hoverbg,
   hovercolor,
   bordercolor,
+  hoverborder,
 }) => {
   const buttonRef = useRef(null);
 
@@ -60,7 +60,6 @@ const WideButton = ({
     border: none;
 
     .c-button {
-      font-weight: 400;
       font-size: ${fontsize};
       text-decoration: none;
       padding: ${paddingy} ${paddingx};
@@ -69,11 +68,18 @@ const WideButton = ({
       vertical-align: middle;
       position: relative;
       z-index: 1;
-      transition: all 0.5s cubic-bezier(0.25, 0.5, 0.75, 1);
+      transition: all 1s cubic-bezier(0.25, 0.5, 0.75, 1);
       overflow: hidden;
       border-radius: 50px;
-      font-family: "montreal";
-      background: ${bg};
+      font-family: var(--light-font);
+      background: linear-gradient(77deg, #7253ffb9 60%, #aa00ffb9);
+      box-shadow: 2px 5px 50px #a200ff85;
+      white-space: nowrap;
+
+      &:hover {
+        box-shadow: 2px 5px 80px #a200ff;
+        
+      }
 
       @media (max-width: 768px) {
         padding: ${mpaddingy} ${mpaddingx};
@@ -83,11 +89,13 @@ const WideButton = ({
 
     .c-button--gooey {
       color: ${color};
-      letter-spacing: 1.5px;
       border: 1px solid ${bordercolor};
       position: relative;
-      transition: all 0.5s cubic-bezier(0.25, 0.5, 0.75, 1);
-      outline: none;
+      transition: all 1s cubic-bezier(0.25, 0.5, 0.75, 1);
+
+      &:hover {
+        border: 1px solid ${hoverborder};
+      }
     }
 
     .c-button--gooey .c-button__blobs {
@@ -177,18 +185,18 @@ export default WideButton;
 // How to use this button
 
 {
-  /* <WideButton
-text="info@cyper.studio"
-paddingx="1.6rem"
-paddingy=".8rem"
-mpaddingx="1rem"
-mpaddingy="1rem"
-fontsize="1rem"
-mfontsize=".8rem"
-color="#eee"
-bg="#2a42ff"
-hoverbg="#111"
-hovercolor="#eee"
-bordercolor="#111"
-/> */
+  /*                  <WideButton
+            text="See all cases"
+            paddingx="4rem"
+            paddingy="1rem"
+            mpaddingx="1.5rem"
+            mpaddingy="1rem"
+            fontsize="1rem"
+            mfontsize=".8rem"
+            color="#eee"
+            hoverbg="#000"
+            hovercolor="#eee"
+            bordercolor="##a200ff"
+            hoverborder="#000"
+          /> */
 }
