@@ -152,23 +152,11 @@ const PortfolioRightContainer = styled.div`
   }
 `;
 
-function Right({ title, desc, span, videosrc, isOdd }) {
+function Right({ title, desc, span, videosrc }) {
   return (
     <PortfolioRightContainer>
-      <div
-        className="right"
-        style={
-          isOdd ? { flexDirection: "row-reverse" } : { flexDirection: "row" }
-        }
-      >
-        <div
-          className="info"
-          style={
-            isOdd
-              ? { borderRight: "1px solid #000" }
-              : { borderRight: "1px solid var(--grey)" }
-          }
-        >
+      <div className="right">
+        <div className="info">
           <div className="top">
             <div className="title">
               <h1>{title}</h1>
@@ -197,14 +185,7 @@ function Right({ title, desc, span, videosrc, isOdd }) {
             </p>
           </div>
         </div>
-        <div
-          className="visuals"
-          style={
-            isOdd
-              ? { borderRight: "1px solid var(--grey)" }
-              : { borderRight: "1px solid #000" }
-          }
-        >
+        <div className="visuals">
           <video autoPlay loop muted src={videosrc}></video>
         </div>
       </div>

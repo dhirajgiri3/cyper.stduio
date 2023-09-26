@@ -117,7 +117,6 @@ function Prtfolio() {
         <div>
           <Link href="/">
             <Right
-              isOdd={false}
               title="FAD"
               desc="Discover a vibrant community that celebrates fashion, creativity, and individuality.
 Join Fad and be a part of India's first Fashion Community Platform."
@@ -127,7 +126,6 @@ Join Fad and be a part of India's first Fashion Community Platform."
           </Link>
           <Link href="/">
             <Right
-              isOdd={true}
               title="Shipex Inida"
               desc="Shipex is a shipping company that offers shipping services
             in india.
@@ -142,7 +140,6 @@ Join Fad and be a part of India's first Fashion Community Platform."
           </Link>
           <Link href="/">
             <Right
-              isOdd={false}
               title="FAD"
               desc="Discover a vibrant community that celebrates fashion, creativity, and individuality.
 Join Fad and be a part of India's first Fashion Community Platform."
@@ -152,7 +149,6 @@ Join Fad and be a part of India's first Fashion Community Platform."
           </Link>
           <Link href="/">
             <Right
-              isOdd={true}
               title="Shipex Inida"
               desc="Shipex is a shipping company that offers shipping services
             in india.
@@ -167,7 +163,6 @@ Join Fad and be a part of India's first Fashion Community Platform."
           </Link>
           <Link href="/">
             <Right
-              isOdd={false}
               title="FAD"
               desc="Discover a vibrant community that celebrates fashion, creativity, and individuality.
 Join Fad and be a part of India's first Fashion Community Platform."
@@ -177,7 +172,6 @@ Join Fad and be a part of India's first Fashion Community Platform."
           </Link>
           <Link href="/">
             <Right
-              isOdd={true}
               title="Shipex Inida"
               desc="Shipex is a shipping company that offers shipping services
             in india.
