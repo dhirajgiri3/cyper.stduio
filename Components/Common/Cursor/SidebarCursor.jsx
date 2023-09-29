@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import styled from "styled-components";
 
@@ -16,10 +16,9 @@ const CursorWrapper = styled.div`
 `;
 
 const Cursor = styled.div`
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 3px;
+  height: 3px;
   border-radius: 50%;
-  background-color: currentColor;
   opacity: 1;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -29,12 +28,20 @@ const Cursor = styled.div`
   justify-content: center;
   align-items: center;
   background: #fff;
-  color: #111;
+  padding: 0.5rem;
+`;
+
+const PText = styled.p`
+  color: #000;
   font-size: 4px;
+  font-family: var(--light-font);
+  opacity: ${(props) => (props.visible ? "1" : "0")};
+  transition: all 0.3s ease-in-out;
 `;
 
 const SidebarCursor = () => {
   const cursorRef = useRef(null);
+  const [isPVisible, setPVisible] = useState(false);
 
   useEffect(() => {
     const cursor = cursorRef.current;
@@ -50,24 +57,18 @@ const SidebarCursor = () => {
       });
     };
 
-    const onMouseEnterCarousel = (event) => {
+    const onMouseEnterCarousel = () => {
+      setPVisible(true);
       gsap.to(cursor, {
         duration: 0.3,
-        scale: 2.5,
+        scale: 3,
         mixBlendMode: "difference",
       });
-      gsap.to(cursor, {
-        duration: 0.4,
-        opacity: 1,
-        mixBlendMode: "difference",
-      });
-      gsap.to(cursor, { duration: 0.4, mixBlendMode: "difference" });
     };
 
-    const onMouseLeaveCarousel = (event) => {
+    const onMouseLeaveCarousel = () => {
+      setPVisible(false);
       gsap.to(cursor, { duration: 0.3, scale: 1 });
-      gsap.to(cursor, { duration: 0.4, opacity: 1 });
-      gsap.to(cursor, { duration: 0.4, mixBlendMode: "normal" });
     };
 
     window.addEventListener("mousemove", onMouseMove);
@@ -88,7 +89,7 @@ const SidebarCursor = () => {
   return (
     <CursorWrapper ref={cursorRef}>
       <Cursor>
-        Click
+        <PText visible={isPVisible}>Click</PText>
       </Cursor>
     </CursorWrapper>
   );

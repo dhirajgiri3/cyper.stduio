@@ -193,7 +193,7 @@ function FirstSection() {
             We are <br />{" "}
             <div className="studio">
               <Link href="/about">
-                <div className="span">
+                <div className="span link">
                   <span>Cyper</span>
                 </div>
               </Link>

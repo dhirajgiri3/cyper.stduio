@@ -129,7 +129,6 @@ const PortfolioRightContainer = styled.div`
       min-height: 80vh;
       height: 100%;
       border: 1px solid var(--grey);
-      border-left: 1px solid #000;
       border-right: 1px solid #000;
       display: flex;
       justify-content: center;
@@ -137,6 +136,7 @@ const PortfolioRightContainer = styled.div`
 
       @media screen and (max-width: 1024px) {
         min-height: 50vh;
+        border-left: 1px solid #000;
       }
 
       @media screen and (max-width: 767px) {

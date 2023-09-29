@@ -78,7 +78,7 @@ const WideButton = ({
 
       &:hover {
         box-shadow: 2px 5px 80px #a200ff;
-        
+        scale: 1.05;
       }
 
       @media (max-width: 768px) {

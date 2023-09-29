@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Trusted from "./Trusted/Trusted";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const SecondSectionContainer = styled.div`
   width: 100%;
@@ -14,6 +15,10 @@ const SecondSectionContainer = styled.div`
   overflow: hidden;
   flex-direction: column;
   gap: 5rem;
+
+  a {
+    text-decoration: none;
+  }
 
   @media screen and (max-width: 1024px) {
     padding: 2.5rem 5rem;
@@ -193,7 +198,9 @@ function SecondSection() {
         <div className="strokes">
           {text.map((item, index) => (
             <motion.div key={index} variants={textVariants}>
-              <OutlineTxt url={imageUrls[index]}>{item}</OutlineTxt>
+              <Link href={item}>
+                <OutlineTxt url={imageUrls[index]}>{item}</OutlineTxt>
+              </Link>
             </motion.div>
           ))}
         </div>

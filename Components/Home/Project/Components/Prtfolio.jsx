@@ -1,4 +1,3 @@
-import Button from "@/Components/Common/Buttons/Button";
 import WideButton from "@/Components/Common/Buttons/WideButtons";
 import Link from "next/link";
 import React from "react";
@@ -13,7 +12,6 @@ const ProjectPortfolioContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  color: #e1e1e1;
   position: relative;
   padding: 5rem 10rem;
   flex-direction: column;
