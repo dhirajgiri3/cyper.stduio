@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 import Right from "./Right";
+import SidebarCursor from "@/Components/Common/Cursor/SidebarCursor";
 
 const ProjectPortfolioContainer = styled.div`
   width: 100%;
@@ -17,6 +18,11 @@ const ProjectPortfolioContainer = styled.div`
   padding: 5rem 10rem;
   flex-direction: column;
   gap: 2rem;
+  overflow: hidden;
+
+  .link {
+    cursor: pointer;
+  }
 
   @media screen and (max-width: 1024px) {
     padding: 5rem;
@@ -115,7 +121,7 @@ function Prtfolio() {
           />
         </div>
         <div>
-          <Link href="/">
+          <Link href="/" className="link">
             <Right
               title="FAD"
               desc="Discover a vibrant community that celebrates fashion, creativity, and individuality.
@@ -124,7 +130,7 @@ Join Fad and be a part of India's first Fashion Community Platform."
               videosrc="https://res.cloudinary.com/divbobkmd/video/upload/v1690745994/fad-reel-2_AdobeExpress_simbrc.mp4"
             />
           </Link>
-          <Link href="/">
+          <Link href="/" className="link">
             <Right
               title="Shipex Inida"
               desc="Shipex is a shipping company that offers shipping services
@@ -138,7 +144,7 @@ Join Fad and be a part of India's first Fashion Community Platform."
               videosrc="https://lazarev.kiev.ua/website-la/cases/metaq-vid-cover.mp4"
             />
           </Link>
-          <Link href="/">
+          <Link href="/" className="link">
             <Right
               title="FAD"
               desc="Discover a vibrant community that celebrates fashion, creativity, and individuality.
@@ -147,7 +153,7 @@ Join Fad and be a part of India's first Fashion Community Platform."
               videosrc="https://res.cloudinary.com/divbobkmd/video/upload/v1690745994/fad-reel-2_AdobeExpress_simbrc.mp4"
             />
           </Link>
-          <Link href="/">
+          <Link href="/" className="link">
             <Right
               title="Shipex Inida"
               desc="Shipex is a shipping company that offers shipping services
@@ -161,7 +167,7 @@ Join Fad and be a part of India's first Fashion Community Platform."
               videosrc="https://lazarev.kiev.ua/website-la/cases/metaq-vid-cover.mp4"
             />
           </Link>
-          <Link href="/">
+          <Link href="/" className="link">
             <Right
               title="FAD"
               desc="Discover a vibrant community that celebrates fashion, creativity, and individuality.
@@ -170,7 +176,7 @@ Join Fad and be a part of India's first Fashion Community Platform."
               videosrc="https://res.cloudinary.com/divbobkmd/video/upload/v1690745994/fad-reel-2_AdobeExpress_simbrc.mp4"
             />
           </Link>
-          <Link href="/">
+          <Link href="/" className="link">
             <Right
               title="Shipex Inida"
               desc="Shipex is a shipping company that offers shipping services
@@ -185,6 +191,7 @@ Join Fad and be a part of India's first Fashion Community Platform."
             />
           </Link>
         </div>
+        <SidebarCursor />
       </div>
     </ProjectPortfolioContainer>
   );

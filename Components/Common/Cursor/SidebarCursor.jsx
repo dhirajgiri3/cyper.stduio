@@ -8,7 +8,7 @@ const CursorWrapper = styled.div`
   left: 0;
   pointer-events: none;
   z-index: 9999;
-  mix-blend-mode: normal; 
+  mix-blend-mode: normal;
 
   @media screen and (max-width: 1000px) {
     display: none;
@@ -16,23 +16,22 @@ const CursorWrapper = styled.div`
 `;
 
 const Cursor = styled.div`
-  width: 20px;
-  height: 20px;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   background-color: currentColor;
   opacity: 1;
   transform: translate(-50%, -50%);
   pointer-events: none;
   mix-blend-mode: difference;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: center;
-  align-items: center; 
-
-  color: #fff;
-  font-size: 14px;
+  align-items: center;
+  background: #fff;
+  color: #111;
+  font-size: 4px;
 `;
-
 
 const SidebarCursor = () => {
   const cursorRef = useRef(null);
@@ -88,7 +87,9 @@ const SidebarCursor = () => {
 
   return (
     <CursorWrapper ref={cursorRef}>
-      <Cursor />
+      <Cursor>
+        Click
+      </Cursor>
     </CursorWrapper>
   );
 };
