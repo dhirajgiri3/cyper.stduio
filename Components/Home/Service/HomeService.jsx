@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Top from "./Top";
-import Bottom from "./Bottom";
+import Top from "./Components/Top";
+import Bottom from "./Components/Bottom";
 
 const HomeServiceContainer = styled.div`
   width: 100%;

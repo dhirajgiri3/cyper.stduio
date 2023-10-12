@@ -34,6 +34,13 @@ const ProjectHeadContainer = styled.div`
     justify-content: center;
     padding: 1rem;
 
+    @media screen and (max-width: 1024px) {
+      top: 3rem;
+      left: 3rem;
+      width: 17rem;
+      height: 17rem;
+    }
+
     @media screen and (max-width: 767px) {
       top: 5em;
       left: 3rem;
@@ -45,7 +52,7 @@ const ProjectHeadContainer = styled.div`
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 50%; /* Changed to 50% */
+      border-radius: 50%; 
       border: none;
       outline: none;
       mix-blend-mode: difference;
@@ -139,14 +146,9 @@ function Head() {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    // Check if window is defined (client-side) before accessing it
     if (typeof window !== "undefined") {
-      // Access window.innerWidth safely here
       const windowWidth = window.innerWidth;
-      // Use windowWidth in your logic
       const x = windowWidth < 767 ? 0 : 300;
-
-      // Update the videoVariants with the calculated x value
       videoVariants.initial.x = x;
     }
   }, []);

@@ -27,12 +27,12 @@ const Cursor = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: var(--primary);
   padding: 0.5rem;
 `;
 
 const PText = styled.p`
-  color: #000;
+  color: #fff;
   font-size: 4px;
   font-family: var(--light-font);
   opacity: ${(props) => (props.visible ? "1" : "0")};
@@ -63,6 +63,7 @@ const SidebarCursor = () => {
         duration: 0.3,
         scale: 3,
         mixBlendMode: "difference",
+        
       });
     };
 

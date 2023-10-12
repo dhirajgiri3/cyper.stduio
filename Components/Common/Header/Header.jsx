@@ -78,7 +78,6 @@ const HeaderContainer = styled(motion.div)`
     .mid {
       display: none;
 
-
       @media screen and (max-width: 767px) {
         opacity: 0;
         transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
@@ -306,20 +305,6 @@ function Header() {
     }
   });
 
-  const [dateTime, setDateTime] = React.useState(
-    new Date().toLocaleString("en-GB", { timeZone: "Europe/London" })
-  );
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setDateTime(
-        new Date().toLocaleString("en-GB", { timeZone: "Europe/London" })
-      );
-    }, 1000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
   return (
     <>
       <HeaderContainer
@@ -341,9 +326,7 @@ function Header() {
             <h3>Cyper Studio</h3>
           </div>
           <div className="right">
-            <div className="time">
-              <p> London, UK : {dateTime}</p>
-            </div>
+            <LondonTimer />
             <div className="bar">
               <label className="hamburger">
                 <input type="checkbox" onClick={showSidebar} />
@@ -364,6 +347,25 @@ function Header() {
         <Sidebar />
       </Sidebars>
     </>
+  );
+}
+
+function LondonTimer() {
+  const [dateTime, setDateTime] = React.useState(null);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setDateTime(
+        new Date().toLocaleString("en-GB", { timeZone: "Europe/London" })
+      );
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+  return (
+    <div className="time">
+      <p> London, UK : {dateTime ? dateTime : ""}</p>
+    </div>
   );
 }
 

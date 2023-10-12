@@ -7,7 +7,7 @@ const PortfolioRightContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    min-height: 80vh;
+    min-height: 50vh;
     width: 100%;
     height: 100%;
     position: relative;
@@ -17,7 +17,7 @@ const PortfolioRightContainer = styled.div`
     }
 
     @media screen and (max-width: 767px) {
-      flex-direction: column;
+      flex-direction: column-reverse;
       gap: 3rem;
     }
 
@@ -25,7 +25,7 @@ const PortfolioRightContainer = styled.div`
       flex: 1;
       padding: 2rem;
       width: 100%;
-      min-height: 80vh;
+      min-height: 50vh;
       height: 100%;
       gap: 3rem;
       display: flex;
@@ -36,6 +36,7 @@ const PortfolioRightContainer = styled.div`
       transition: all 0.5s ease-in-out;
       border-left: 1px solid #000;
       border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
 
       @media screen and (max-width: 1024px) {
         border-right: 1px solid #000;
@@ -126,10 +127,11 @@ const PortfolioRightContainer = styled.div`
       flex: 1;
       padding: 1rem;
       width: 100%;
-      min-height: 80vh;
+      min-height: 50vh;
       height: 100%;
       border: 1px solid var(--grey);
       border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
       display: flex;
       justify-content: center;
       align-items: center;
